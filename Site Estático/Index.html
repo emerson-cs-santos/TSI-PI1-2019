@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <title>Associação Cultural Cariri</title> <!–– Nome do site, exibido na aba do browser––>
+        <meta charset="utf-8"> <!–– Define acentução––>
+    
+        <link rel="stylesheet" href="CSS/style.css"> <!–– Refrencia um arquivo CSS––>
+        <script type="text/javascript" src="JS/Script.js"></script> <!–– Refrencia um arquivo Java Script––>
+
+    </head>                             
+
+    <body>   
+        <header>                          
+            <h1>ACC</h1>    
+
+            <nav>
+                <ul>
+                    <li> <a href ="#section_1"> Section 1</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="section_1">
+                    <Header>
+                        <h2>Section 1</h2>
+                    </Header>
+            </section>            
+            
+            <section id="teste">
+                    <p id="paragrafo1"> Paragrafo Teste com ID</p>               
+                    <p class="paragrafo2">Paragrafo Teste com Class</p>
+            </section>
+            
+            <section id="form">
+                <form action="">
+                    <label>Produto</label>
+                    
+                    <input type="text" id="input1" name="input1" placeholder="Nome do Produto">
+                    <button type="button" name="btnGravar" onclick="mens(document.getElementById('input1').value)">Gravar</button>
+                </form>
+            </section>
+        </main>
+
+         <footer>
+                <p><a href="contato.html" target="_blank"> Fale conosco</a> </p>
+         </footer>
+    </body>
+</html>
