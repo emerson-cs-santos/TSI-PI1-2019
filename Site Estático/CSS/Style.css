@@ -1,3 +1,12 @@
+/* É recomendado utilizar o código da cor como hexa Decimal (este exemplo está em hexa) ou RGB, 
+    pois desta forma a cor será exata. colocar apenas como "RED" dependendo o monitor pode ter 
+    uma tonalidade diferente.
+*/
+/* * { */
+   /* background-color:#fff !important; */ /*Essa cor está em hexa decimal. Esse parâmetro de import, faz com que os códigos CSS da página html sejam sobreescrevidos com os desta página css */
+ /*   }*/
+
+
 div#nome{
     height: 40px;    
 }
@@ -7,20 +16,21 @@ div#email{
     height: 40px;
 }
 
-div#mensagem{
   /* white-space: pre-line; */
+
+
+div#centro{
+    height: auto;
+    width: 700;
+    background-color: #fff000;
+  }
+
+.centro{
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 25%;
+    margin-right: 25%;    
 }
-
-
-
-
-/* É recomendado utilizar o código da cor como hexa Decimal (este exemplo está em hexa) ou RGB, 
-    pois desta forma a cor será exata. colocar apenas como "RED" dependendo o monitor pode ter 
-    uma tonalidade diferente.
-*/
-* {
-    background-color:#fff !important; /*Essa cor está em hexa decimal. Esse parâmetro de import, faz com que os códigos CSS da página html sejam sobreescrevidos com os desta página css */
-    }
 
 
 
