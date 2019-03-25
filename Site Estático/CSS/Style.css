@@ -1,6 +1,17 @@
-div#mensagem{
-    white-space: pre-line;
+div#nome{
+    height: 40px;    
 }
+
+
+div#email{
+    height: 40px;
+}
+
+div#mensagem{
+  /* white-space: pre-line; */
+}
+
+
 
 
 /* É recomendado utilizar o código da cor como hexa Decimal (este exemplo está em hexa) ou RGB, 
