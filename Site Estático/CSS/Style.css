@@ -19,19 +19,23 @@ div#email{
   /* white-space: pre-line; */
 
 
-div#centro{
+main#centro{
     height: auto;
-    width: 700;
-    background-color: #fff000;
+    width: 800px;
+    background-color:#fff;
   }
 
 .centro{
     margin-top:0;
     margin-bottom: 0;
-    margin-left: 25%;
+    margin-left: 22%;
     margin-right: 25%;    
 }
 
+header{
+    width: 800px;
+    height: auto;
+}
 
 
 /*Para especificar um parágrafo e alterar ele graficamente, é possível fazer essa referência usando uma ID, logo após #.*/
@@ -44,10 +48,17 @@ p#paragrafo1{
     color: chocolate;                  
 }
 
+
+/* Está aplicando em todos os H1*/
 h1{
     /* Exemplo de cor com RGB passando as cores como números 1-255*/
     color: rgb(255, 0, 0);              
 }
+h1#projetoAtividades{
+    /* Exemplo de cor com RGB passando as cores como números 1-255*/
+    color:rgba(0, 0, 255, 0.5);              
+}
+
 
 /*Para especificar um parágrafo e alterar elementos gráficos, é possível fazer essa referência usando uma classe. */
 p.paragrafo2 {
@@ -57,4 +68,36 @@ p.paragrafo2 {
     
     /* Exemplo de cor com RGB passando as cores como números 1-255, último parametro define a transpârencia que vai de 0-1 (0,1 0,2 0,3 até 1)*/
     color:rgba(0, 0, 255, 0.5);         
+}
+
+#projetoAtividade_section1{
+    width: 100%;
+    height: 500px;
+    background-color: coral;
+    
+    display: inline-block;
+}
+
+#projetoAtividadeAtuais{
+    width: 48%;
+    height: auto;
+    background-color: chartreuse;
+    float: left;
+}
+
+#projetoAtividadeAtuais img{
+    width: 248px;
+    height: auto;
+}
+
+#historicoProjetos{
+    width: 48%;
+    height: auto;
+    background-color: crimson;
+    float: right;
+}
+
+#historicoProjetos img{
+    width: 248px;
+    height: auto;
 }
