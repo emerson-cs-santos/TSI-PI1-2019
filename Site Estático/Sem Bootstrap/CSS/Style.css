@@ -1,0 +1,103 @@
+/* É recomendado utilizar o código da cor como hexa Decimal (este exemplo está em hexa) ou RGB, 
+    pois desta forma a cor será exata. colocar apenas como "RED" dependendo o monitor pode ter 
+    uma tonalidade diferente.
+*/
+/* * { */
+   /* background-color:#fff !important; */ /*Essa cor está em hexa decimal. Esse parâmetro de import, faz com que os códigos CSS da página html sejam sobreescrevidos com os desta página css */
+ /*   }*/
+
+
+div#nome{
+    height: 40px;    
+}
+
+
+div#email{
+    height: 40px;
+}
+
+  /* white-space: pre-line; */
+
+
+main#centro{
+    height: auto;
+    width: 800px;
+    background-color:#fff;
+  }
+
+.centro{
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 22%;
+    margin-right: 25%;    
+}
+
+header{
+    width: 800px;
+    height: auto;
+}
+
+
+/*Para especificar um parágrafo e alterar ele graficamente, é possível fazer essa referência usando uma ID, logo após #.*/
+p#paragrafo1{   
+   
+    /* Tamanho da fonte*/
+    font-size: 30px;                      
+   
+     /* Cor do texto, exemplo passando a cor pelo nome, que pode ter problema dependendo do monitor*/ 
+    color: chocolate;                  
+}
+
+
+/* Está aplicando em todos os H1*/
+h1{
+    /* Exemplo de cor com RGB passando as cores como números 1-255*/
+    color: rgb(255, 0, 0);              
+}
+h1#projetoAtividades{
+    /* Exemplo de cor com RGB passando as cores como números 1-255*/
+    color:rgba(0, 0, 255, 0.5);              
+}
+
+
+/*Para especificar um parágrafo e alterar elementos gráficos, é possível fazer essa referência usando uma classe. */
+p.paragrafo2 {
+
+    /* Nivel do Bold*/
+    font-weight: 900;
+    
+    /* Exemplo de cor com RGB passando as cores como números 1-255, último parametro define a transpârencia que vai de 0-1 (0,1 0,2 0,3 até 1)*/
+    color:rgba(0, 0, 255, 0.5);         
+}
+
+#projetoAtividade_section1{
+    width: 100%;
+    height: 500px;
+    background-color: coral;
+    
+    display: inline-block;
+}
+
+#projetoAtividadeAtuais{
+    width: 48%;
+    height: auto;
+    background-color: chartreuse;
+    float: left;
+}
+
+#projetoAtividadeAtuais img{
+    width: 248px;
+    height: auto;
+}
+
+#historicoProjetos{
+    width: 48%;
+    height: auto;
+    background-color: crimson;
+    float: right;
+}
+
+#historicoProjetos img{
+    width: 248px;
+    height: auto;
+}
