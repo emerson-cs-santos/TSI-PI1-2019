@@ -1,103 +1,45 @@
-/* É recomendado utilizar o código da cor como hexa Decimal (este exemplo está em hexa) ou RGB, 
-    pois desta forma a cor será exata. colocar apenas como "RED" dependendo o monitor pode ter 
-    uma tonalidade diferente.
-*/
-/* * { */
-   /* background-color:#fff !important; */ /*Essa cor está em hexa decimal. Esse parâmetro de import, faz com que os códigos CSS da página html sejam sobreescrevidos com os desta página css */
- /*   }*/
-
-
-div#nome{
-    height: 40px;    
-}
-
-
-div#email{
-    height: 40px;
-}
-
-  /* white-space: pre-line; */
-
-
-main#centro{
-    height: auto;
-    width: 800px;
-    background-color:#fff;
-  }
-
-.centro{
-    margin-top:0;
-    margin-bottom: 0;
-    margin-left: 22%;
-    margin-right: 25%;    
-}
-
-header{
-    width: 800px;
-    height: auto;
-}
-
-
-/*Para especificar um parágrafo e alterar ele graficamente, é possível fazer essa referência usando uma ID, logo após #.*/
-p#paragrafo1{   
-   
-    /* Tamanho da fonte*/
-    font-size: 30px;                      
-   
-     /* Cor do texto, exemplo passando a cor pelo nome, que pode ter problema dependendo do monitor*/ 
-    color: chocolate;                  
-}
-
-
-/* Está aplicando em todos os H1*/
-h1{
-    /* Exemplo de cor com RGB passando as cores como números 1-255*/
-    color: rgb(255, 0, 0);              
-}
-h1#projetoAtividades{
-    /* Exemplo de cor com RGB passando as cores como números 1-255*/
-    color:rgba(0, 0, 255, 0.5);              
-}
-
-
-/*Para especificar um parágrafo e alterar elementos gráficos, é possível fazer essa referência usando uma classe. */
-p.paragrafo2 {
-
-    /* Nivel do Bold*/
-    font-weight: 900;
-    
-    /* Exemplo de cor com RGB passando as cores como números 1-255, último parametro define a transpârencia que vai de 0-1 (0,1 0,2 0,3 até 1)*/
-    color:rgba(0, 0, 255, 0.5);         
-}
-
-#projetoAtividade_section1{
+footer {
+    background-color: rgb(1, 6, 11);
     width: 100%;
-    height: 500px;
-    background-color: coral;
-    
-    display: inline-block;
+    bottom: 0;
+    font-weight: lighter;
+    color: white;
 }
-
-#projetoAtividadeAtuais{
-    width: 48%;
-    height: auto;
-    background-color: chartreuse;
-    float: left;
+.footerHeader{
+    width:100%;
+    padding:1em;
+    background-color:rgb(136, 236, 77);
+    text-align:center;
+    color:white;
 }
-
-#projetoAtividadeAtuais img{
-    width: 248px;
-    height: auto;
+footer h6{
+    font-weight:lighter;
+    margin-left: 5%;
 }
-
-#historicoProjetos{
-    width: 48%;
-    height: auto;
-    background-color: crimson;
-    float: right;
+footer ul{
+    padding-left:5px;
+    list-style:none;
+    display: inline;
+    margin-left: 5%;
 }
-
-#historicoProjetos img{
-    width: 248px;
-    height: auto;
+footer p{
+    text-align : justify;
+    font-size : 12px;
+    margin-left: 5%;
 }
+footer iframe {
+    width:100%;
+    position:relative;
+    height:170px;
+}
+.sm{
+    list-style:none;
+    overflow:auto;
+}
+.sm li {
+    display: inline;
+    padding:5px;
+    float:left;
+} 
+.sm li a img {
+    width:32px;
