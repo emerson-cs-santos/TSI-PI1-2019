@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        
-        <title>Associação Cultural Cariri</title> <!–– Nome do site, exibido na aba do browser––>
-        <meta charset="utf-8"> <!–– Define acentução––>
+
+<head>
+
+    <title>Associação Cultural Cariri (ACC)</title>
+   
+    <meta charset="utf-8">
+    <meta name="description" content=">Associação Cultural Cariri, Enentos beneficentes, cursos gratuiros, bazares....(colocar mais descrição que aparecetá no buscador ex: google e yahoo">
+    <meta name="keywords" content="ONG, Beneficente, brazar, cursos, palestras">
+    <meta name="authot" content="The Warriors (Senac-PI)">
     
-        <link rel="stylesheet" href="CSS/style.css"> <!–– Refrencia um arquivo CSS––>
-        <script type="text/javascript" src="JS/Script.js"></script> <!–– Refrencia um arquivo Java Script––>
+    <link rel="stylesheet" href="css/estilo.css">
 
-    </head>                             
-
-    <body>   
-        <header class="centro" >
-                <h1 id='projetoAtividades'>Associação Cultural Cariri</h1>
-
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="Index.html"> Inicio</a>
-                        </li>
-                        <li>
-                            <a href="Contato.html"> Contato</a>
-                        </li>                        
-                        <li>
-                            <a href="Projetos_Atividades.html"> Projetos e Atividades</a>
-                        </li>                        
-                    </ul>
-                </nav>
-        </header>
-
-        <main>
-            <section id="section_1">
-                    <Header>
-                        <h2>Section 1</h2>
-                    </Header>
-            </section>            
+</head>
+<body>
+    <header>
+        
+        <div class="navbar">
+            <a class="navbar-brand"> <img src="Imagens/LogoACC.jpg" width="100" height="100" alt="Logo da Empresa"></a>
+           
+            <a href="Index.html"><strong>Inicio</strong></a>
             
-            <section id="teste">
-                    <p id="paragrafo1"> Paragrafo Teste com ID</p>               
-                    <p class="paragrafo2">Paragrafo Teste com Class</p>
-            </section>
-            
-            <section id="form">
-                <form action="">
-                    <label>Produto</label>
+            <div class="dropdown">
+                <button class="dropbtn"><strong>Sobre a Entidade</strong>
+                   <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="Historia.html">História</a>
+                        <a href="Membros.html">Membros</a>
+                        <a href="Vontarios.html">Voluntários</a>
+                    </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn"><strong>Projetos</strong>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="Reciclagem.html">Reciclagem</a>
+                        <a href="Brecho.html">Brechó</a>
+                        <a href="Cursos.html">Cursos</a>
+                        <a href="Corte_Costura.html">Corte & Costura</a>
+                        <a href="Bijuteria.html">Bijuteria</a>
+                        <a href="Sarau_Poesia.html">Saurau de Poesia</a>
+                    </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn"><strong>Eventos realizados</strong>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="Aniversario_Cocaia.html">Aniversário Cocáia</a> </a>
+                        <a href="Outros_Eventos.html">Outros Eventos</a>
+                    </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn"><strong> Registro de Atividades </strong>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-content">
+                        <a href="Trabalhos.html">Trabalhos</a> </a>
+                        <a href="Reunioes_Realizadas.html">Reuniões Realizadas</a>
+                    </div>
+            </div> 
+
+            <a href="Como_Ajudar.html"><strong>Como Ajudar</strong></a>
+
+            <a href="Contato.html"><strong>Contato</strong></a>
+
+        </div>
+
+        <h1>Associação Cultural Cariri</h1>
+    </header>
+
+    <main>    
+            <div class="wrapper">
+                    <div class="box content">
+                        <header>
+                            <h2>Sua História</h2>
+                        </header>
+                            <p class="text-left">Desde 1999, a Associação Cultural Cariri, atua na região do Grajaú, uma área de vulnerabilidade social, uma entidade sem fins lucrativos.</p>
+                        <header>
+                            <h2>Missâo</h2>
+                        </header>
+                            <p class="text-left">Visa o desenvolvimento humano e social das comunidades populares. Promovendo a inclusão e a cidadania solidária e programas de geração de renda.</p>
+                        <header>
+                            <h2>Atividades</h2>
+                        </header>
+                            <p class="text-left">Oficinas de artesanato (vários segmentos), curso básico de informática, reunião mensal de acompanhamento das necessidades do bairro e região, representado pela diretoria, informa as dificuldades e necessidades a subprefeitura, que orienta e ajuda a minimizar esses problemas.</p>
+                        <header>
+                            <h2>Como Ajudar</h2>
+                        </header>
+                            <p class="text-left">Faça parte da nossa família: Seja mais um parceiro ou padrinho, madrinha, abrace essa causa é possível através de parcerias, a organização e contribuições das pessoas, são fundamentais para o desenvolvimento de nossas ações.</p>
                     
-                    <input type="text" id="input1" name="input1" placeholder="Nome do Produto">
-                    <button type="button" name="btnGravar" onclick="mens(document.getElementById('input1').value)">Gravar</button>
-                </form>
-            </section>
-        </main>
+                </div>
+                    <div class="box sidebar">
+                            <img src="Imagens/Index.jpg" height="350px;">
+                    </div>
+                        
+                      
+                    <!–– <div class="box footer">Footer</div>
+        </section>
 
-         <footer>
-                <p><a href="contato.html" target="_blank"> Fale conosco</a> </p>
-         </footer>
-    </body>
-</html>
+        <footer>
+            <Span> Footer com Endereço</Span>
+        </footer>
+    </main>
+</body>
