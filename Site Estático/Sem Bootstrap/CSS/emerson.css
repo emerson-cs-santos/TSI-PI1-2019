@@ -1,12 +1,27 @@
 /***************************************** Como Ajudar *****************************************/
 .h2_como_ajudar{
-    font-size: 50px;
+    font-size: 350%;
 }
 
 .h3_como_ajudar{
-  font-size: 20px;
+  font-size: 200%;
+  margin-top: 10%;
 }
 
 .p_como_ajudar{
-  margin-top: 5em;
+  margin-bottom: 3%;
+  font-size: 100%;
+}
+
+.p_como_ajudar_2{
+  margin-top: 3%;
+  font-size: 100%;
+}
+
+.img_como_ajudar{
+  display: block;
+    padding-left: 0%;
+    padding-right: 120%;
+  height: 200%;
+  width: 200%;
 }
