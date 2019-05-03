@@ -9,6 +9,11 @@ body {
   
 }
 
+.navbar-brand {
+  padding: 0px !important;
+  margin-top: 0px !important;
+}
+
 .navbar a {
   float: left;
   font-size: 16px;
@@ -18,6 +23,7 @@ body {
   text-decoration: none;
   margin-top: 17px;
 }
+
 
 .dropdown {
   float: left;
@@ -88,6 +94,8 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
 }
+
+/**/
 .cx {
   padding: 5em;
   color:black;
@@ -164,6 +172,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: sans-serif;
+  z-index: 0;
 }
 .box{
   width: 1200px;
