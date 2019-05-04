@@ -1,0 +1,29 @@
+/*  */
+.Footer {
+   /*  display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;*/
+    background-color: rgb(0, 0, 0);
+   
+  }
+
+  /* Exibe o mapa com o endereço da associação cultural cariri */
+#Parte_1 {
+    display: inline-block;
+  }
+
+/* Imagem de uma mapa, está sendo usado para para medir o espaço, futuramente será substituido pelo mapa de fato */
+.img_parte1 {
+    width:70%; 
+    height:40%;
+    padding: 2%;
+    
+  }
+
+/* Exibe o endereço completo juntamente com a URL da página do facebook */
+#Parte_2 {
+    color: white;
+    display: inline-block;
+    padding: 3em;
+    
+  }

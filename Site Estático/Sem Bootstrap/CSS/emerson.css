@@ -1,9 +1,43 @@
-/***************************************** Como Ajudar *****************************************/
-.h2_como_ajudar{
-    font-size: 350%;
+/********************** Afeta todas as Páginas feitas pelo Emerson *****************************************/
+
+/* 2 Colunas para exibir o Main */
+.Grade_Main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.h3_como_ajudar{
+/* Exibe a primeira parte do site no lado esquerdo - Não afeta o header */
+.Caixa_1 {
+  padding: 2em;
+  color:black;
+  text-align: left;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+  /* Descomente para ver como a caixa está se comportando Não afeta o header */
+  background-color: rgb(137, 223, 203);
+}
+
+/* Exibe a segunda parte do site no lado direito */
+.Caixa_2 {
+  color:black;
+  text-align: left;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+  /* Descomente para ver como a caixa está se comportando*/
+  background-color: rgb(98, 0, 255);
+}
+
+/******************** Abaixo são códigos que afetam paginas individualmente criadas pelo Emerson****************/
+
+
+/***************************************** Como Ajudar *****************************************/
+.h1_como_ajudar{
+    font-size: 150%;
+    margin-top: 5%;
+}
+
+.h2_como_ajudar{
   font-size: 200%;
   margin-top: 10%;
 }
@@ -18,6 +52,52 @@
   font-size: 100%;
 }
 
-#x {
-  padding-left: 0;
+#img_como_ajudar{
+  height: 60%;
+  width: 100%;
+
+  margin-top: 30%;
 }
+
+
+
+/***************************************** Brechó *****************************************/
+.h1_brecho{
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+.h2_brecho{
+font-size: 200%;
+margin-top: 10%;
+}
+
+.p_brecho{
+margin-bottom: 3%;
+font-size: 100%;
+}
+
+.h3_brecho{
+  font-size: 200%;
+}
+
+.img_brecho_geral{
+  height: 60%;
+  width: 100%;
+  
+  margin-top: 30%;
+  }
+
+#img_brecho_1{
+  margin-top: 30%;
+}
+
+#img2_brecho{
+
+  }
+
+  
+#img3_brecho{
+
+  }
+  
