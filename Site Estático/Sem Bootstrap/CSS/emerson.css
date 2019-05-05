@@ -1,15 +1,37 @@
 /********************** Afeta todas as Páginas feitas pelo Emerson *****************************************/
 
+/* 1 Coluna para exibir o Main */
+.Grade_Main_1 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
 /* 2 Colunas para exibir o Main */
-.Grade_Main {
-  height: 100vh;
+.Grade_Main_2 {
+  height: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-/* Exibe a primeira parte do site no lado esquerdo - Não afeta o header */
-.Caixa_1 {
-  padding: 2em;
+/* 3 Colunas para exibir o Main */
+.Grade_Main_3 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50% 50%;
+  grid-template-rows: 100%;
+}
+
+
+/******************** Abaixo são códigos que afetam paginas individualmente criadas pelo Emerson****************/
+
+
+/***************************************** Como Ajudar *****************************************/
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+
+/* Coluna 1 - Não afeta o header */
+.Como_Ajudar_Caixa_1 {
+  padding: 1em;
   color:black;
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
@@ -18,8 +40,8 @@
   background-color: rgb(137, 223, 203);
 }
 
-/* Exibe a segunda parte do site no lado direito */
-.Caixa_2 {
+/* Coluna 2 - Não afeta o header */
+.Como_Ajudar_Caixa_2 {
   color:black;
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
@@ -28,10 +50,6 @@
   background-color: rgb(98, 0, 255);
 }
 
-/******************** Abaixo são códigos que afetam paginas individualmente criadas pelo Emerson****************/
-
-
-/***************************************** Como Ajudar *****************************************/
 .h1_como_ajudar{
     font-size: 150%;
     margin-top: 5%;
@@ -62,14 +80,28 @@
 
 
 /***************************************** Brechó *****************************************/
+
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+/* Coluna 1 - Não afeta o header */
+.Brecho_Caixa_1 {
+  padding: 0em;
+  color:black;
+  text-align: left;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+  /* Descomente para ver como a caixa está se comportando Não afeta o header */
+  background-color: rgb(137, 223, 203);
+}
+
 .h1_brecho{
-  font-size: 150%;
-  margin-top: 5%;
+  font-size: 200%;
+  margin-top: 10%;
+
 }
 
 .h2_brecho{
-font-size: 200%;
-margin-top: 10%;
+font-size: 150%;
+margin-top: 5%;
 }
 
 .p_brecho{
@@ -78,26 +110,264 @@ font-size: 100%;
 }
 
 .h3_brecho{
-  font-size: 200%;
+  font-size: 150%;
 }
 
 .img_brecho_geral{
-  height: 60%;
-  width: 100%;
-  
-  margin-top: 30%;
+
   }
 
 #img_brecho_1{
-  margin-top: 30%;
+  height: 30%;
+  width: 30%;  
+
 }
 
-#img2_brecho{
+#img_brecho_2{
+  height: 10%;
+  width: 30%;
+ 
 
   }
 
+#img_brecho_3{
+  height: 15%;
+  width: 30%;
   
-#img3_brecho{
+  }
+
+
+/***************************************** Cursos *****************************************/
+
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+/* Coluna 1 - Não afeta o header */
+.Cursos_Caixa_1 {
+  padding: 0em;
+  color:black;
+  text-align: left;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+  /* Descomente para ver como a caixa está se comportando Não afeta o header */
+  background-color: rgb(137, 223, 203);
+}
+
+.h1_cursos{
+font-size: 200%;
+margin-top: 10%;
+
+}
+
+.h2_cursos{
+font-size: 150%;
+margin-top: 5%;
+}
+
+.p_cursos{
+margin-bottom: 3%;
+font-size: 100%;
+}
+
+.h3_cursos_info{
+font-size: 100%;
+margin-top: 1%;
+}
+
+.p_cursos_info{
+margin-bottom: 3%;
+font-size: 100%;
+}
+
+.h3_cursos_patchwork{
+font-size: 100%;
+margin-top: 1%;
+}
+
+
+.p_cursos_patchwork{
+margin-bottom: 3%;
+font-size: 100%;
+}
+
+.h3_cursos_padaria{
+font-size: 100%;
+margin-top: 1%;
+}
+
+.p_cursos_padaria{
+margin-bottom: 3%;
+font-size: 100%;
+}
+
+
+.img_cursos_geral{
 
   }
+
+#img_cursos_info{
+  height: 30%;
+  width: 30%;  
+
+}
+
+#img_cursos_patchwork{
+  height: 10%;
+  width: 30%;
+ 
+
+  }
+
+#img_cursos_padaria{
+  height: 15%;
+  width: 30%;
   
+  }
+
+
+/***************************************** Trabalhos realizados *****************************************/
+
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+/* Coluna 1 - Não afeta o header */
+.Trabalhos_Caixa_1 {
+  padding: 0em;
+  color:black;
+  text-align: center;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+  /* Descomente para ver como a caixa está se comportando Não afeta o header */
+  background-color: rgb(137, 223, 203);
+}
+
+.h1_Trabalhos{
+font-size: 200%;
+margin-top: 1%;
+
+}
+
+.p_Trabalhos{
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-size: 100%;
+  }
+  
+
+.form_Trabalhos{
+  margin-top: 3%;
+}
+
+#label_Trabalhos{
+  font-size: 200%;
+}
+
+#img_Trabalhos{
+  height: 500px;
+  width: 700px;
+}
+
+#botao_trabalhos_anterior{
+  margin-right: 40%;
+  height: 2em;
+  width: 5em;
+}
+
+#botao_trabalhos_proximo{
+  height: 2em;
+  width: 5em;
+}
+
+
+/*************************************** Reuniões realizadas *****************************************/
+
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+/* Coluna 1 - Não afeta o header */
+.Reunioes_Caixa_1 {
+  padding: 0em;
+  color:black;
+  text-align: center;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+  /* Descomente para ver como a caixa está se comportando Não afeta o header */
+  background-color: rgb(137, 223, 203);
+}
+
+.h1_Reunioes{
+font-size: 200%;
+margin-top: 1%;
+
+}
+
+.form_reunioes{
+  margin-top: 3%;
+}
+
+#label_Trabalhos{
+  font-size: 200%;
+}
+
+#img_Trabalhos{
+  height: 500px;
+  width: 700px;
+}
+
+#botao_trabalhos_anterior{
+  margin-right: 40%;
+  height: 2em;
+  width: 5em;
+}
+
+#botao_trabalhos_proximo{
+  height: 2em;
+  width: 5em;
+}
+
+
+
+/*************************************** Outros Eventos *****************************************/
+
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+/* Coluna 1 - Não afeta o header */
+.Outros_eventos_Caixa_1 {
+  padding: 0em;
+  color:black;
+  text-align: center;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+  /* Descomente para ver como a caixa está se comportando Não afeta o header */
+  background-color: rgb(137, 223, 203);
+}
+
+.h1_Outros_eventos{
+font-size: 200%;
+margin-top: 1%;
+
+}
+
+.p_outros_eventos{
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-size: 100%;
+  
+  }
+
+.form_reunioes{
+  margin-top: 3%;
+}
+
+#label_Trabalhos{
+  font-size: 200%;
+}
+
+#img_Trabalhos{
+  height: 500px;
+  width: 700px;
+}
+
+#botao_trabalhos_anterior{
+  margin-right: 40%;
+  height: 2em;
+  width: 5em;
+}
+
+#botao_trabalhos_proximo{
+  height: 2em;
+  width: 5em;
+}

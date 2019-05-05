@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>ACC - Brechó</title>
+    <title>ACC - Reuniões realizadas</title>
 
     <meta charset="utf-8">
     <meta name="description" content=">Associação Cultural Cariri, Enentos beneficentes, cursos gratuiros, bazares....(colocar mais descrição que aparecetá no buscador ex: google e yahoo">
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/Header.css">
     <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/Emerson.css">
+
+    <script type="text/javascript" src="JS/Slide_Show.js"></script>
     
 </head>
 
@@ -69,33 +71,52 @@
             <a href="Como_Ajudar.html"><strong>Como Ajudar</strong></a>
             <a href="Contato.html"><strong>Contato</strong></a>
             
-            <h1 class="">Projeto: Brechó Beneficente</h1>
+            <h1 class="">Reuniões realizadas</h1>
         </header>
 
-       
     </div>
 
     <main>
         <section class="Grade_Main_1">
             
-            <div class="Brecho_Caixa_1">
+            <div class="Reunioes_Caixa_1">
 
-                <h1 class="h1_brecho">Projeto: Brechó Beneficente</h1>
-
-                <h2 class="h2_brecho">Ajudar Pessoas com baixo custo</h2>
-
-                <p class="p_brecho">São vendidas roupas e afins para arrecadação de fundos que são utilizados nos projetos da associação.</p>
-               
-                <h3 class="h3_brecho">Fotos de alguns brechós:</h3>
-
-                <img id='img_brecho_1' class='img_brecho_geral' src="Imagens/ajudar.png" alt="Teste">
+                <h1 class="h1_Reunioes">Reuniões Realizadas</h1>
                 
-                <img id='img_brecho_2' class='img_brecho_geral' src="Imagens/teste.jpg" alt="Teste">
-           
-                <img id='img_brecho_3' class='img_brecho_geral' src="Imagens/Projetos_atuais.JPG" alt="Teste">
-                  
-            </div>          
+                <form class ='form_reunioes' action="">
+                    <label 
+                        id='label_Trabalhos'>
+                        Título da reunião
+                    </label>
+
+                    <div>
+                        <img id='img_Trabalhos' src="Imagens/ajudar.png" alt="Teste">
+                    </div>
+                        
+                    <button id='botao_trabalhos_anterior'
+                        type="button" 
+                        name="btn_Anterior" 
+                        onclick="anterior()"
+                    ><<
+                    </button>
+
+                    <button id='botao_trabalhos_proximo'
+                        type="button" 
+                        name="btn_Proximo" 
+                        onclick="proximo()"
+                    >>>
+                    </button>
+
+                </form>                
+
+            </div> 
+
          </section>
+
+         <script>
+            // Define imagem inicial
+            inicial();
+         </script>
     </main>
 
     <footer class="Footer">
