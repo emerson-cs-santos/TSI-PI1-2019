@@ -68,6 +68,23 @@
   }
 }
 
+
+.top {
+  transition: all 2s linear 0.3s;
+  opacity: 1;
+}
+
+.top-aparece {
+  opacity: 1;
+}
+
+.top-desaparece {
+  opacity: 0;
+}
+
+
+
+
 /******************** Abaixo são códigos que afetam paginas individualmente criadas pelo Emerson****************/
 
 

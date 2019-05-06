@@ -77,14 +77,21 @@ function proximo()
 
     // "Apaga" imagem atual
     //setTimeout(Troca_imagem_efeito(image,'apagar'),3000);
-    Troca_imagem_efeito(image,'apagar');
+    // Troca_imagem_efeito(image,'apagar');
 
-    // Atualiza imagem
-    image.src = trabalho_caminho(atual);
-    
+    // Apaga imagem
+    setTimeout(function () {
+        image.src = trabalho_caminho(atual);
+        Troca_imagem_efeito(image,'apagar');
+    },3000);    
+
     // "Reaparece" na próxima imagem
-  //  setTimeout(Troca_imagem_efeito(image,'aparece'),3000);
-    Troca_imagem_efeito(image,'aparece');
+    setTimeout(function () {
+        image.src = trabalho_caminho(atual);
+        Troca_imagem_efeito(image,'aparece');
+    },3000);
+
+    //Troca_imagem_efeito(image,'aparece');
 
     // Atualiza caption da label
     document.getElementById("label_Trabalhos").innerHTML = trabalho_caption(atual);
@@ -97,13 +104,13 @@ function proximo()
 function Troca_imagem_efeito(imagem,tipo)
 {
    if(tipo == 'apagar'){
-    imagem.classList.add('Efeito_troca_imagem_desaparece');
-    imagem.classList.remove('Efeito_troca_imagem_desaparece');
+    imagem.classList.add('top-desaparece');
+    //imagem.classList.remove('top-aparece');
    }
    else
    {
-    imagem.classList.add('Efeito_troca_imagem_aparece');
-    imagem.classList.remove('Efeito_troca_imagem_aparece');
+    //imagem.classList.add('top-aparece');
+    imagem.classList.remove('top-desaparece');
    }
 }
 
