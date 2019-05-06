@@ -22,6 +22,51 @@
   grid-template-rows: 100%;
 }
 
+.Efeito_troca_imagem_desaparece{
+	animation-name: desaparece;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+.Efeito_troca_imagem_aparece{
+	animation-name: aparece;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+@keyframes desaparece {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+  }
+}
+
+@keyframes aparece {
+	100% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+	}
+  0% {
+		opacity: 1;
+  }
+}
 
 /******************** Abaixo são códigos que afetam paginas individualmente criadas pelo Emerson****************/
 
@@ -273,6 +318,8 @@ margin-top: 1%;
   height: 2em;
   width: 5em;
 }
+
+
 
 
 /*************************************** Reuniões realizadas *****************************************/

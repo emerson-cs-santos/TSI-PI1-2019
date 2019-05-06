@@ -10,7 +10,7 @@ function inicial()
     var qtd_maxima = 5;    
     
     var image = document.getElementById("img_Trabalhos");
-    image.src = trabalho_caminho(imagem_inicial) ;   
+    image.src = trabalho_caminho(imagem_inicial); 
 
     document.getElementById("label_Trabalhos").innerHTML = trabalho_caption(imagem_inicial);
 
@@ -27,14 +27,8 @@ function anterior()
     // Carrega posição atual da foto
     var atual = load('trabalho');
 
-    alert('atual');
-    alert(atual);
-
     // Carrega quantidade máxima de fotos
     var maximo = load('quantidade_maxima_de_fotos');
-
-    alert('maximo');
-    alert(maximo);
 
     // Se a foto atual for a primeira, ir para a última
     if(atual == 1)
@@ -46,17 +40,14 @@ function anterior()
         atual = atual - 1;
     }
 
-    alert('proximo');
-    alert(atual);
-
     // atualiza slide show
     var image = document.getElementById("img_Trabalhos");
     var caminho_atual = trabalho_caminho(atual); 
-    alert(caminho_atual);
+
     image.src = caminho_atual;      
 
     // Atualiza caption da label
-    document.getElementById("label_Trabalhos").innerHTML = trabalho_caption('atual');
+    document.getElementById("label_Trabalhos").innerHTML = trabalho_caption(atual);
 
     // salva nova posição atual da foto
     save('trabalho',atual);
@@ -66,10 +57,10 @@ function anterior()
 function proximo()
 {
     // Carrega posição atual da foto
-    var atual = load(trabalho);
+    var atual = load('trabalho');
 
     // Carrega quantidade máxima de fotos
-    var maximo = load(quantidade_maxima_de_fotos)
+    var maximo = load('quantidade_maxima_de_fotos')
 
     // Se a foto atual for a última (5) volta para a primeira
     if(atual == maximo)
@@ -81,15 +72,39 @@ function proximo()
         atual = atual + 1;
     }
 
-    // atualiza slide show
-    var image = document.getElementById("img_Trabalhos");
-    image.src = trabalho_caminho(atual);      
+    // Atualiza imagem
+    var image = document.getElementById("img_Trabalhos");  
+
+    // "Apaga" imagem atual
+    //setTimeout(Troca_imagem_efeito(image,'apagar'),3000);
+    Troca_imagem_efeito(image,'apagar');
+
+    // Atualiza imagem
+    image.src = trabalho_caminho(atual);
+    
+    // "Reaparece" na próxima imagem
+  //  setTimeout(Troca_imagem_efeito(image,'aparece'),3000);
+    Troca_imagem_efeito(image,'aparece');
 
     // Atualiza caption da label
     document.getElementById("label_Trabalhos").innerHTML = trabalho_caption(atual);
 
     // salva nova posição atual da foto
     save('trabalho',atual);
+}
+
+// Efeito da Troca imagem
+function Troca_imagem_efeito(imagem,tipo)
+{
+   if(tipo == 'apagar'){
+    imagem.classList.add('Efeito_troca_imagem_desaparece');
+    imagem.classList.remove('Efeito_troca_imagem_desaparece');
+   }
+   else
+   {
+    imagem.classList.add('Efeito_troca_imagem_aparece');
+    imagem.classList.remove('Efeito_troca_imagem_aparece');
+   }
 }
 
 // Salva valor de variaval para uso posterior a executação do javascript
@@ -103,7 +118,7 @@ function save(nome,valor)
 function load(nome)
 {
     // Carregar informação local
-    var load = localStorage.getItem(nome);
+    var load = parseInt(localStorage.getItem(nome));
 
     return(load);
 }
@@ -112,9 +127,6 @@ function load(nome)
 function trabalho_caminho(N_trabalho)
 {
    var caminho = '';
-
-   alert('buscar caminho do');
-    alert(N_trabalho);
 
     switch (N_trabalho) {
        
@@ -138,9 +150,6 @@ function trabalho_caminho(N_trabalho)
             caminho = "Imagens/Trabalhos_5.jpg";
         break;           
       }
-
-      alert('caminho encontrado');
-      alert(caminho);
 
     return(caminho);
 }
