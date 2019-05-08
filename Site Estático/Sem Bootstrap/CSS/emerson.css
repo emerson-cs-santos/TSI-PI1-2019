@@ -71,15 +71,29 @@
 
 .top {
   transition: all 2s linear 0.3s;
-  opacity: 1;
-}
-
-.top-aparece {
-  opacity: 1;
+  opacity: 0.25;
 }
 
 .top-desaparece {
+  transition: all 5s linear 0.9s;
+
+  opacity: 1;
+  opacity: 0.75;
+  opacity: 0.50;
+  opacity: 0.25;
   opacity: 0;
+
+}
+
+
+.top-aparece {
+  transition: all 5s linear 0.9s;
+
+  opacity: 0;
+  opacity: 0.25;
+  opacity: 0.50;
+  opacity: 0.75;
+  opacity: 1;
 }
 
 
@@ -308,7 +322,7 @@ margin-top: 1%;
 .p_Trabalhos{
   margin-bottom: 0%;
   margin-top: 0%;
-  font-size: 100%;
+  font-size: 150%;
   }
   
 
@@ -327,11 +341,14 @@ margin-top: 1%;
 
 #botao_trabalhos_anterior{
   margin-right: 40%;
+  margin-left: 40%;
   height: 2em;
   width: 5em;
 }
 
 #botao_trabalhos_proximo{
+  margin-right: 40%;
+  margin-left: 40%;  
   height: 2em;
   width: 5em;
 }
