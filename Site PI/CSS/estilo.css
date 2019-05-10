@@ -1,0 +1,94 @@
+
+/* container do H1 no Header */
+.grid-container0 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 80px;
+  background-color:  rgb(137, 223, 203);
+  color: black;
+  text-align: center;
+  width: 100%;
+}
+/* container das colunas do main */
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+/* container das colunas do container2 */
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 100%; 
+  width: 100%;
+  
+}
+
+/* container das colunas do container3 */
+.grid-container3 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  
+}
+
+/* Classe configuracao de estilo e padding*/
+.cx {
+  padding: 5em;
+  color:black;
+  text-align: left;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+}
+
+/* Classe configuracao de estilo e padding*/
+.cx2 {
+  padding: 25%;
+  color:  rgb(137, 223, 203);
+  text-align: left;
+  text-shadow: 1px 1px 1px black;
+}
+/* Classe Background da div para saber o espaco e local que ela esta ocupando */
+
+.cx-1 {
+  background-color: rgb(137, 223, 203);
+  
+}
+/* Classe Background da div para saber o espaco e local que ela esta ocupando */
+.cx-2 {
+  background-color:  rgb(137, 223, 203);
+/* Classe Background e coluna da div para saber o espaco e local que ela esta ocupando */
+}
+.cx-3 {
+  background-color:  rgb(137, 223, 203);
+  grid-column: 1/4;
+/* Classe Background da div para saber o espaco e local que ela esta ocupando */
+}
+.cx-4 {
+  background-color: red;
+  padding: 5em;
+}
+/* Classe Background da div para saber o espaco e local que ela esta ocupando */
+.teste2 {
+  background-color: yellow;
+  padding: 5em;
+}
+/* Classe Background da div para saber o espaco e local que ela esta ocupando */
+.teste3 {
+  background-color: rgb(0, 51, 255);
+  padding: 5em;
+}
+
+ 
+#margem_footer {
+  color: white;
+  padding-top: 80px; 
+  
+}
+
+
+
+
+  
+
+
