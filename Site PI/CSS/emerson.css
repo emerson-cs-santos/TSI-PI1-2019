@@ -202,9 +202,6 @@ font-size: 100%;
   font-size: 150%;
 }
 
-.img_brecho_geral{
-
-  }
 
 #img_brecho_1{
   height: 30%;
@@ -285,10 +282,6 @@ margin-bottom: 3%;
 font-size: 100%;
 }
 
-
-.img_cursos_geral{
-
-  }
 
 #img_cursos_info{
   height: 30%;
@@ -460,12 +453,21 @@ margin-top: 1%;
 /* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
 /* Coluna 1 - Não afeta o header */
 .voluntarios_Caixa_1 {
-  padding: 0em;
-  color:black;
-  text-align: center;
-  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
 
 }
+
+.h1_voluntarios{
+  font-size: 200%;
+  margin-top: 1%;
+  
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
 
 /*************************************** Outros Eventos *****************************************/
 
