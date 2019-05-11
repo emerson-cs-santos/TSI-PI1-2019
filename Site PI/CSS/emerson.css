@@ -345,17 +345,27 @@ margin-top: 1%;
 #img_Trabalhos{
   height: 500px;
   width: 700px;
+
+  border: 15px solid transparent;
+  padding: 1px;
+  border-image: url('border.png') 30 stretch;  
+
+
 }
 
 #botao_trabalhos_anterior{
   height: 2em;
   width: 5em;
+  margin-left: 40%;
 }
 
 #botao_trabalhos_proximo{
   height: 2em;
   width: 5em;
+  margin-right: 40%;
 }
+
+
 
 
 
@@ -382,27 +392,30 @@ margin-top: 1%;
   margin-top: 3%;
 }
 
-#label_Trabalhos{
+#label_reuniao{
   font-size: 200%;
 }
 
-#img_Trabalhos{
+#img_reuniao{
   height: 500px;
   width: 700px;
+
+  border: 15px solid transparent;
+  padding: 1px;
+  border-image: url('border.png') 30 stretch;    
 }
 
-#botao_trabalhos_anterior{
+#botao_reuniao_anterior{
+  height: 2em;
+  width: 5em;
+  margin-left: 40%;
+}
+
+#botao_reuniao_proximo{
+  height: 2em;
+  width: 5em;
   margin-right: 40%;
-  height: 2em;
-  width: 5em;
 }
-
-#botao_trabalhos_proximo{
-  height: 2em;
-  width: 5em;
-}
-
-
 
 /*************************************** Outros Eventos *****************************************/
 
@@ -415,43 +428,3 @@ margin-top: 1%;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
 }
-
-.h1_Outros_eventos{
-font-size: 200%;
-margin-top: 1%;
-
-}
-
-.p_outros_eventos{
-  margin-bottom: 0%;
-  margin-top: 0%;
-  font-size: 100%;
-  
-  }
-
-.form_reunioes{
-  margin-top: 3%;
-}
-
-#label_Trabalhos{
-  font-size: 200%;
-}
-
-#img_Trabalhos{
-  height: 500px;
-  width: 700px;
-}
-
-#botao_trabalhos_anterior{
-  margin-right: 40%;
-  height: 2em;
-  width: 5em;
-}
-
-#botao_trabalhos_proximo{
-  height: 2em;
-  width: 5em;
-}
-
-
-

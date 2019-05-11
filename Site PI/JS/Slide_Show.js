@@ -241,7 +241,7 @@ function imagem_caminho(origem,numero_imagem)
         break;
 
         case 'reuniao':
-            caminho = trabalho_caminho(numero_imagem);
+            caminho = reuniao_caminho(numero_imagem);
         break;
          
       }
@@ -294,7 +294,27 @@ function trabalho_caminho(N_trabalho)
 
         case 5:
             caminho = "Imagens/Trabalhos_5.jpg";
-        break;           
+        break;  
+
+		case 6:
+            caminho = "Imagens/Trabalhos_6.jpg";
+        break; 
+		
+		case 7:
+            caminho = "Imagens/Trabalhos_7.jpg";
+        break;		
+		
+		case 8:
+            caminho = "Imagens/Trabalhos_8.jpg";
+        break;
+		
+		case 9:
+            caminho = "Imagens/Trabalhos_9.jpg";
+        break;
+
+		case 10:
+            caminho = "Imagens/Trabalhos_10.jpg";
+        break;			
       }
 
     return(caminho);
@@ -308,24 +328,44 @@ function trabalho_caption(N_trabalho)
     switch (N_trabalho) {
        
         case 1:
-            caption = "Trabalho 1";
+            caption = "Capas para almofadas (1/10)";
         break;
 
         case 2:
-            caption = "Trabalho 2";
+            caption = "Capas para livros e agendas (2/10)";
         break;
 
         case 3:
-            caption = "Trabalho 3";
+            caption = "Panos de prato (3/10)";
         break;
 
         case 4:
-            caption = "Trabalho 4";
+            caption = "Bolsas (4/10)";
         break;
 
         case 5:
-            caption = "Trabalho 5";
-        break;           
+            caption = "Reciclagem de disco de Vinil (5/10)";
+        break;   
+
+        case 6:
+            caption = "Bijuterias e Pedraria (6/10)";
+        break;
+		
+		case 7:
+            caption = "Trabalhos Manuais (7/10)";
+        break;  
+
+		case 8:
+            caption = "Pulseira de imã (8/10)";
+        break; 
+		
+		case 9:
+            caption = "Brincos artesanais (9/10)";
+        break; 
+
+		case 10:
+            caption = "Colcha em Patchwork, retalhos em tecido (10/10)";
+        break; 		
       }    
 
     return(caption);
@@ -345,4 +385,76 @@ function load(nome)
     var load = parseInt(localStorage.getItem(nome));
 
     return(load);
+}
+
+// Carrega caminho da imagem pertinente a imagem - REUNIÃO
+function reuniao_caminho(N_reuniao)
+{
+   var caminho = '';
+
+    switch (N_reuniao) {
+       
+        case 1:
+            caminho = "Imagens/Reuniao_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Reuniao_2.jpg";
+        break;
+
+        case 3:
+            caminho = "Imagens/Reuniao_3.jpg";
+        break;
+
+        case 4:
+            caminho = "Imagens/Reuniao_4.jpg";
+        break;
+
+        case 5:
+            caminho = "Imagens/Reuniao_5.jpg";
+        break;  
+
+		case 6:
+            caminho = "Imagens/Reuniao_6.jpg";
+        break; 
+				
+      }
+
+    return(caminho);
+}
+
+// Carrega caption da label referente a imagem - REUNIÃO
+function reuniao_caption(N_reuniao)
+{
+    var caption = '';
+
+    switch (N_reuniao) {
+       
+        case 1:
+            caption = "Reunião do grupo em 28/JUN/2012 (1/6)";
+        break;
+
+        case 2:
+            caption = "Reunião do grupo em 08/FEV/2012 (2/6)";
+        break;
+
+        case 3:
+            caption = "Reunião para ver andamento da obra (3/6)";
+        break;
+
+        case 4:
+            caption = "Reunião em 11 DE DEZ 2011 (4/6)";
+        break;
+
+        case 5:
+            caption = "Reunião do grupo em 28/FEV/2011  (5/6)";
+        break;   
+
+        case 6:
+            caption = "Reunião do grupo em 22/JAN/2018 (6/6)";
+        break;
+				
+      }    
+
+    return(caption);
 }
