@@ -23,6 +23,7 @@
 }
 
 
+
 /* Faz desaparecer imagem */
 .Efeito_troca_imagem_desaparece{
 	animation-name: desaparece;
@@ -130,9 +131,6 @@ button:hover::before {
   color:black;
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
-
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 /* Coluna 2 - Não afeta o header */
@@ -141,8 +139,6 @@ button:hover::before {
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando*/
-  background-color: rgb(98, 0, 255);
 }
 
 .h1_como_ajudar{
@@ -184,8 +180,6 @@ button:hover::before {
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_brecho{
@@ -242,8 +236,6 @@ font-size: 100%;
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_cursos{
@@ -327,9 +319,6 @@ font-size: 100%;
   color:black;
   text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
-
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_Trabalhos{
@@ -346,7 +335,7 @@ margin-top: 1%;
   
 
 .form_Trabalhos{
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 #label_Trabalhos{
@@ -359,15 +348,11 @@ margin-top: 1%;
 }
 
 #botao_trabalhos_anterior{
-  margin-right: 40%;
-  margin-left: 40%;
   height: 2em;
   width: 5em;
 }
 
 #botao_trabalhos_proximo{
-  margin-right: 40%;
-  margin-left: 40%;  
   height: 2em;
   width: 5em;
 }
@@ -385,8 +370,6 @@ margin-top: 1%;
   text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_Reunioes{
@@ -431,8 +414,6 @@ margin-top: 1%;
   text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_Outros_eventos{
