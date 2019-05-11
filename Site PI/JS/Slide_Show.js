@@ -1,80 +1,207 @@
 // JavaScript dedicado ao controle de troca de imagens que são exibidas nos slides shows
+// Páginas que utilizam:
+    // Trabalhos
+    // Reuniões
+    // Index
 
-// Define foto inicial - TRABALHO
-function inicial()
+// Define foto inicial
+function inicial(origem,inicial,maximo)
 {
+    // origem - Qual é a página que está chamando a função
+    // inicial - Qual é o número da pagina inicial
+    // maximo - Qual é o número máximo de imagens que a página possui
+    
     // Define qual imagem será a inicial
-    var imagem_inicial = 1;
+    var imagem_inicial = inicial;
 
     // Define quantidade máxima de fotos
-    var qtd_maxima = 5;    
+    var qtd_maxima = maximo;
+
+    // Variavel para o caminho da imagem
+    var image;
+
+    // Carrega o nome da id da imagem da página atual
+    var id_imagem = id_imagem_nome(origem);
+
+    // Carrega o nome da id da imagem da página atual
+    var id_label = id_label_nome(origem);  
+
+    // Carrega objeto da imagem do HTML
+    image = document.getElementById(id_imagem);
     
-    var image = document.getElementById("img_Trabalhos");
-    image.src = trabalho_caminho(imagem_inicial); 
-
-    document.getElementById("label_Trabalhos").innerHTML = trabalho_caption(imagem_inicial);
-
+    // Carrega imagem inicial
+    image.src = imagem_caminho(origem,imagem_inicial); 
+    
+    // Carrega título inical
+    document.getElementById(id_label).innerHTML = label_caption(origem,imagem_inicial);
+      
+    // Carrega o nome da propriedade que é utlizada no local store
+    var Nome_numero_imagem_atual   = carregar_tipo_save_load_Atual(origem);
+    var Nome_qtd_maxima_fotos      = carregar_tipo_save_load_Qtd_Maximo(origem);
+    
     // Salva imagem atual definida acima
-    save('trabalho',imagem_inicial);
+    save(Nome_numero_imagem_atual,imagem_inicial);
 
     // salva quantidade máxima de fotos
-    save('quantidade_maxima_de_fotos',qtd_maxima);
+    save(Nome_qtd_maxima_fotos,qtd_maxima);
 }
 
-// Carrega Foto anterior em relação a atual - TRABALHO
-function anterior()
+// Carrega Foto anterior/proxima em relação a atual
+function mudar_imagem(origem,direcao)
 {
+    // origem - Qual é a página que está chamando a função
+
+    // Carrega o nome da propriedade que é utlizada no local store
+    var Nome_numero_imagem_atual   = carregar_tipo_save_load_Atual(origem);
+    var Nome_qtd_maxima_fotos      = carregar_tipo_save_load_Qtd_Maximo(origem);    
+   
     // Carrega posição atual da foto
-    var atual = load('trabalho');
+    var atual = load(Nome_numero_imagem_atual);
 
     // Carrega quantidade máxima de fotos
-    var maximo = load('quantidade_maxima_de_fotos');
+    var maximo = load(Nome_qtd_maxima_fotos);
 
-    // Se a foto atual for a primeira, ir para a última
-    if(atual == 1)
+    if(direcao == 'esquerda') 
     {
-        atual = maximo;
+        // Se a foto atual for a primeira, ir para a última
+        if(atual == 1)
+        {
+            atual = maximo;
+        }
+        else // Subtrair mais 1 para seguir para a imagem anterior
+        {
+            atual = atual - 1;
+        } 
     }
-    else // Subtrair mais 1 para seguir para a próxima imagem
+    else  
     {
-        atual = atual - 1;
+        // Se a foto atual for a última (5) volta para a primeira
+        if(atual == maximo)
+        {
+            atual = 1;
+        }
+        else // Somar mais 1 para seguir para a próxima imagem
+        {
+            atual = atual + 1;
+        }
     }
 
-    // atualiza slide show
-    var image = document.getElementById("img_Trabalhos");
-    var caminho_atual = trabalho_caminho(atual); 
+    // Carrega o nome da id da imagem da página atual
+    var id_imagem = id_imagem_nome(origem);
 
-    image.src = caminho_atual;      
-
-    // Atualiza caption da label
-    document.getElementById("label_Trabalhos").innerHTML = trabalho_caption(atual);
-
-    // salva nova posição atual da foto
-    save('trabalho',atual);
-}
-
-// Carrega Foto seguinte em relação a atual - TRABALHO
-function proximo()
-{
-    // Carrega posição atual da foto
-    var atual = load('trabalho');
-
-    // Carrega quantidade máxima de fotos
-    var maximo = load('quantidade_maxima_de_fotos')
-
-    // Se a foto atual for a última (5) volta para a primeira
-    if(atual == maximo)
-    {
-        atual = 1;
-    }
-    else // Somar mais 1 para seguir para a próxima imagem
-    {
-        atual = atual + 1;
-    }
+    // Carrega o nome da id da imagem da página atual
+    var id_label = id_label_nome(origem)  ;     
 
     // Carrega Elemento da imagem
-    var image = document.getElementById("img_Trabalhos");  
+    var image = document.getElementById(id_imagem);
+   
+    // Controla o efeito de opacidade ao mudar a imagem
+    opacidade_control(image,atual,origem);  
+    
+    // Atualiza caption da label
+    document.getElementById(id_label).innerHTML = label_caption(origem,atual);  
 
+    // salva nova posição atual da foto
+    save(Nome_numero_imagem_atual,atual);
+}
+
+// Carrega nome da propriedade salva no local storage que está com o número da imagem atual página,
+// cada página tem um próprio
+function carregar_tipo_save_load_Atual(origem)
+{
+    var Nome_numero_imagem_atual;
+    
+    switch (origem) {
+       
+        // Página de trabalho que chamou função
+        case 'trabalho':
+            Nome_numero_imagem_atual = 'trabalho_imagem_atual';
+        break;
+
+        // Página de reunião que chamou função
+        case 'reuniao':
+            Nome_numero_imagem_atual = 'reuniao_imagem_atual';         
+        break;
+
+      }
+
+    return(Nome_numero_imagem_atual);
+}
+
+// Carrega nome da propriedade salva no local storage que está com o número máximo de imagens atual página,
+// cada página tem um próprio
+function carregar_tipo_save_load_Qtd_Maximo(origem)
+{
+   var Nome_qtd_maxima_fotos;
+   
+    switch (origem) {
+       
+        // Página de trabalho que chamou função
+        case 'trabalho':
+            Nome_qtd_maxima_fotos    = 'trabalho_quantidade_maxima_de_fotos';
+        break;
+
+        // Página de reunião que chamou função
+        case 'reuniao':
+            Nome_qtd_maxima_fotos    = 'reuniao_quantidade_maxima_de_fotos';            
+        break;
+
+      }
+
+    return(Nome_qtd_maxima_fotos);
+}
+
+// Carrega o nome da ID da imagem da página quo chamou o botão do slide show
+function id_imagem_nome(origem)
+{
+   var id_imagem;
+
+    switch (origem) {
+       
+        // Página de trabalho que chamou função
+        case 'trabalho':
+            id_imagem = 'img_Trabalhos';
+        break;
+
+        // Página de reunião que chamou função
+        case 'reuniao':
+            id_imagem = 'img_reuniao';   
+        break;
+
+      }
+
+    return(id_imagem);
+}
+
+// Carrega o nome da ID da label da página quo chamou o botão do slide show
+function id_label_nome(origem)
+{
+    var id_label;
+
+    switch (origem) {
+       
+        // Página de trabalho que chamou função
+        case 'trabalho':
+            id_label = 'label_Trabalhos';
+        break;
+
+        // Página de reunião que chamou função
+        case 'reuniao':
+            id_label = 'label_reuniao';   
+        break;
+
+      }
+
+    return(id_label);
+}
+
+// Controla o efeito de opacidade ao mudar a imagem
+function opacidade_control(image,atual,origem)
+{
+   // image - objeto da imagem
+   // atual - localidação atual das imagens, número da ordem de exibição
+   // origem - Qual página pertence
+   
     // Faz imagem desaparecer aos poucos
     image.classList.add('Efeito_troca_imagem_desaparece');
 
@@ -90,21 +217,56 @@ function proximo()
 
     // Aparece com nova imagem aos poucos e remove o apagador de imagem(opacidade)
     setTimeout(function () {
-        image.src = trabalho_caminho(atual);
+        image.src = imagem_caminho(origem,atual);
         image.classList.remove('opacidade');
         image.classList.add('Efeito_troca_imagem_aparece');
-    },3000);    
+    },2000);    
 
     // Remove classe que faz imagem aparecer aos poucos
     setTimeout(function () {
         image.classList.remove('Efeito_troca_imagem_aparece');
-    },5000);     
-       
-    // Atualiza caption da label
-    document.getElementById("label_Trabalhos").innerHTML = trabalho_caption(atual);
+    },3500);
+    
+}
 
-    // salva nova posição atual da foto
-    save('trabalho',atual);
+// Carrega qual caminho de qual página será utililzado
+function imagem_caminho(origem,numero_imagem)
+{
+   var caminho = '';
+
+    switch (origem) {
+       
+        case 'trabalho':
+            caminho = trabalho_caminho(numero_imagem);
+        break;
+
+        case 'reuniao':
+            caminho = trabalho_caminho(numero_imagem);
+        break;
+         
+      }
+
+    return(caminho);
+}
+
+// Carrega qual caption do titulo na lbael de qual página será utililzado
+function label_caption(origem,numero_imagem)
+{
+   var label_caption = '';
+
+    switch (origem) {
+       
+        case 'trabalho':
+            label_caption = trabalho_caption(numero_imagem); 
+        break;
+
+        case 'reuniao':
+            label_caption = reuniao_caption(numero_imagem); 
+        break;
+         
+      }
+
+    return(label_caption);
 }
 
 // Carrega caminho da imagem pertinente a imagem - TRABALHO
@@ -168,7 +330,6 @@ function trabalho_caption(N_trabalho)
 
     return(caption);
 }
-
 
 // Salva valor de variaval para uso posterior a executação do javascript
 function save(nome,valor)
