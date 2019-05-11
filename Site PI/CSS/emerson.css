@@ -417,6 +417,56 @@ margin-top: 1%;
   margin-right: 40%;
 }
 
+/*************************************** Membros *****************************************/
+
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+
+.membros_Caixa_1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.membros_Caixa_2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 5%;
+}
+
+.h1_membros{
+  font-size: 200%;
+  margin-top: 1%;
+  
+  }
+
+  .p_membros{
+    font-size: 120%;
+  }
+
+  #img_membro{
+    height: 250px;
+    width: 250px;
+  
+    border: 10px solid transparent;
+    padding: 2px;
+    border-image: url('border.png') 40 stretch; 
+  
+  }
+
+/*************************************** Voluntários *****************************************/
+
+/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
+/* Coluna 1 - Não afeta o header */
+.voluntarios_Caixa_1 {
+  padding: 0em;
+  color:black;
+  text-align: center;
+  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
+}
+
 /*************************************** Outros Eventos *****************************************/
 
 /* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
@@ -426,5 +476,6 @@ margin-top: 1%;
   color:black;
   text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+
 
 }
