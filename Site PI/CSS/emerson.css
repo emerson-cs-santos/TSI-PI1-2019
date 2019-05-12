@@ -452,9 +452,10 @@ margin-top: 1%;
 .Outros_eventos_Caixa {
   display: grid;
   width: 80%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
+/* Adiciona borda a imagem exibida */
 #img_eventos{
   height: 500px;
   width: 700px;
@@ -475,10 +476,22 @@ margin-top: 1%;
 
 .label_lista_eventos{
   font-weight: bold;
+  font-size: 120%;
 }
 
-#Form_eventos_lista_direita{
-  margin-left: 6%;
+/* Estiliza lista slecionável de eventos */
+#Lista_eventos{
+  margin-top: 7%;
+
+  -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+  -moz-appearance: none; /* Remove estilo padrão do FireFox */
+  appearance: none; /* Remove estilo padrão do FireFox*/
+
+  background: url('seta.gif') no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+  background-position: 218px center;  /*Posição da imagem do background*/
+  width: 250px; /* Tamanho do select, maior que o tamanho da div/form "div-select" */
+  height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+
+  border:1px solid #ddd;
+  font-size: 120%;
 }
-
-

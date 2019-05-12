@@ -80,13 +80,16 @@
         <section>
             <h1 class="h1_Outros_eventos">Outros Eventos</h1>
             <p class='p_outros_eventos'> A Associação já participou de diversos eventos, clique em 1 deles abaixo para visualizar as fotos do evento.</p>
-            <p class='p_outros_eventos2'>Para visualizar os eventos, clique na lista na esquerda, depois na lista da direita, então utilize o painel de navegação no centro para visualizar as imagens. </p>
+            <p class='p_outros_eventos2'>Selecione um evento e utilize o painel para visualizar as imagens do evento selecionado.</p>
                         
             <div class="Outros_eventos_Caixa">
 
-                <form id='Form_eventos_lista_esquerda'>
-                    <label class='label_lista_eventos'>Grupos de eventos</label>
-                    <select id='Grupos_eventos' name="grupos_eventos" size="10" onchange="Eventos_carregar()" multiple>
+                <form id='Form_eventos_lista'>
+                    
+                    <label class='label_lista_eventos'>Eventos:</label>
+
+                    <select id="Lista_eventos" onchange="Eventos_carregar()">
+                       
                         <option value="Deloitte">Deloitte</option>
                         <option value="Petrobras">Petrobras</option>
                         <option value="Palestra_de_literatura">Palestra de literatura</option>
@@ -95,11 +98,11 @@
                         <option value="Shopping_penha">Shopping penha</option>
                         <option value="Serpro">Serpro</option>
                         <option value="Bingo_beneficente">Bingo beneficente</option>
-                        <option value="Feijoada_Beneficente ">Feijoada Beneficente </option>
-                    </select>
-                </form>                    
-                
+                        <option value="Feijoada_Beneficente ">Feijoada Beneficente</option>
+                    </select> 
 
+                </form>      
+                
                 <form id='Form_eventos_imagens'>
                     <label 
                         id='label_eventos'>
@@ -113,30 +116,23 @@
                     <button id='botao_eventos_anterior'
                         type="button" 
                         name="btn_Anterior" 
-                        onclick="anterior('eventos')"
+                        onclick="ver_evento('esquerda')"
                     ><<
                     </button>
 
                     <button id='botao_eventos_proximo'
                         type="button" 
                         name="btn_Proximo" 
-                        onclick="proximo('eventos')"
+                        onclick="ver_evento('direita')"
                     >>>
                     </button>
-                </form>
-
-                <form id='Form_eventos_lista_direita'>
-                        <label class='label_lista_eventos'>Eventos</label>
-                        <select id='Eventos' name="eventos" size="10" multiple>
-                            <option value="Deloitte">Bazar de natal - Ano 2012</option>
-                        </select>
-                </form>         
+                </form>        
             </div> 
          </section>
 
         <script>
-                // Carrega Grupo e evento inicial
-                
+            // Define imagem inicial
+            ver_evento_inicial();    
         </script>         
     </main>
 

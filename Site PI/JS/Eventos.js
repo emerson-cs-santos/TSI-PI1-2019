@@ -1,37 +1,74 @@
-// Carrega lista de eventos na direita da página
-function Eventos_carregar()
+// Evento inicial - Deloitte
+function ver_evento_inicial()
 {
-    var Grupo_Lista_atual = document.getElementById('Grupos_eventos');
+    save('nome_evento','Deloitte');
+    save('qtd_fotos_eventos',2);
 
-    var Lsta_eventos = document.getElementById('Eventos');
-
-    if(Grupo_Lista_atual.value == 'Deloitte')
-    {
-        // create new option element
-        var opt = document.createElement('option');
-
-        // create text node to add to option element (opt)
-        opt.appendChild( document.createTextNode('New Option Text') );
-
-        // set value property of opt
-        opt.value = 'option value'; 
-
-        // add opt to end of select box (sel)
-        Lsta_eventos.appendChild(opt); 
-    }
-
-    if(Grupo_Lista_atual.value == 'Petrobras')
-    {
-        // remove 2nd option in select box (sel)
-        Lsta_eventos.removeChild( Lsta_eventos.options[2] ); 
-    }    
-
-
-    
+    // Carrega imagem inicial do evento selecionado
+    ver_evento('iniciar');  
 }
 
-// Ao clicar uma uma opção do grupo de eventos, será removido as opções da segunda lista, depois adicionado as novas e então será clicado na primeira opção para carregar a primeira imagem e deixar pronto para navegação.
-// usar local storage para apenas remover e adicionar novos eventos, se usuario clicar em grupo de evento diferente. USar outro local storage para saber qual evento está selecionado e apenas carregas as fotos, quando for selecionado um evento diferente.
-// criar função para adicionar opções - Vai ser chamanda no init, ver como deixar a primeira opção selecionada
-// criar função para remover
-// no clique da segunda lista, chamar a função inicial de imagens e depois controlar com os botões
+// Carrega imagens do evento selecionado
+function Eventos_carregar()
+{
+    // Carrega objeto da lista
+    var Lsta_eventos = document.getElementById('Lista_eventos');
+
+    // Carrega opção da lista selecionado
+    var evento_atual = Lsta_eventos.value;
+
+    // Valida se evento selecionado é diferente do atual, se for igual, nada deve ser feito
+    var evento_tual_validar = load('nome_evento');
+   
+    if(evento_tual_validar == evento_atual )
+    {
+        return('');
+    }
+
+    // Qtd máxima de fotos
+    var qtd_eventos;
+
+    // Atualiza evento selecionado
+    switch (evento_atual) {
+       
+        case 'Deloitte':
+            qtd_eventos = 2;
+        break;
+
+ 	
+      }
+
+    // Atualiza evento atual
+    save('nome_evento',evento_atual);
+    
+    // Atualiza quantidade máxima de fotos do evento atual
+    save('qtd_fotos_eventos',qtd_eventos);
+    
+    // Carrega imagem inicial do evento selecionado
+    ver_evento('iniciar');  
+}
+
+// Carrega próxima ação do evento
+function ver_evento(tipo)
+{
+    var evento_qtd_fotos = load('qtd_fotos_eventos');
+
+    // TESTE DE LOAD DE STRING
+    var evento = load('nome_evento');
+    
+    // Decide qual grupo de imagens vão começar a ser exibidas
+    switch (tipo) {
+       
+        case 'iniciar':
+            inicial('eventos',1,evento_qtd_fotos);
+        break;
+
+        case 'esquerda':
+            mudar_imagem('eventos','esquerda')
+        break;
+        
+        case 'direita':
+            mudar_imagem('eventos','direita')
+        break;        
+      }
+}

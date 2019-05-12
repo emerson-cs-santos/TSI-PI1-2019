@@ -123,6 +123,11 @@ function carregar_tipo_save_load_Atual(origem)
             Nome_numero_imagem_atual = 'reuniao_imagem_atual';         
         break;
 
+        // Página de eventos que chamou função
+        case 'eventos':
+            Nome_numero_imagem_atual = 'eventos_imagem_atual';         
+        break;        
+
       }
 
     return(Nome_numero_imagem_atual);
@@ -146,6 +151,11 @@ function carregar_tipo_save_load_Qtd_Maximo(origem)
             Nome_qtd_maxima_fotos    = 'reuniao_quantidade_maxima_de_fotos';            
         break;
 
+        // Página de eventos que chamou função
+        case 'eventos':
+            Nome_qtd_maxima_fotos    = 'eventos_quantidade_maxima_de_fotos';            
+        break;        
+
       }
 
     return(Nome_qtd_maxima_fotos);
@@ -168,6 +178,11 @@ function id_imagem_nome(origem)
             id_imagem = 'img_reuniao';   
         break;
 
+        // Página de eventos que chamou função
+        case 'eventos':
+            id_imagem = 'img_eventos';   
+        break;        
+
       }
 
     return(id_imagem);
@@ -189,6 +204,11 @@ function id_label_nome(origem)
         case 'reuniao':
             id_label = 'label_reuniao';   
         break;
+
+        // Página de eventos que chamou função
+        case 'eventos':
+            id_label = 'label_eventos';   
+        break;        
 
       }
 
@@ -243,6 +263,9 @@ function imagem_caminho(origem,numero_imagem)
         case 'reuniao':
             caminho = reuniao_caminho(numero_imagem);
         break;
+
+        case 'eventos':
+            caminho = eventos_caminho(numero_imagem);
          
       }
 
@@ -263,6 +286,10 @@ function label_caption(origem,numero_imagem)
         case 'reuniao':
             label_caption = reuniao_caption(numero_imagem); 
         break;
+
+        case 'eventos':
+            label_caption = eventos_caption(numero_imagem); 
+        break;        
          
       }
 
@@ -458,3 +485,81 @@ function reuniao_caption(N_reuniao)
 
     return(caption);
 }
+
+
+// Carrega caminho da imagem pertinente a imagem - Eventos
+function eventos_caminho(N_evento)
+{
+    var caminho = '';
+
+    var evento = load('nome_evento');
+
+    switch (evento) {
+        
+        case 'Deloitte':
+            caminho = deloitte_caminho(N_evento);
+        break;
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem dos eventos da deloitte
+function deloitte_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/Deloitte_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Deloitte_2.jpg";
+        break;        
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem pertinente a imagem - Eventos
+function eventos_caption(N_evento)
+{
+    var caption = '';
+
+    var evento = load('nome_evento');
+
+    switch (evento) {
+        
+        case 'Deloitte':
+            caption = deloitte_caption(N_evento);
+        break;
+            
+    }
+
+    return(caption);
+}
+
+// Carrega caminho da imagem dos eventos da deloitte
+function deloitte_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Deloitte: bazar de natal 2012 (1/2)";
+        break;
+
+        case 1:
+            caption = "Deloitte: bazar de natal 2012 (2/2)";
+        break;        
+            
+    }
+
+    return(caption);
+}
+
