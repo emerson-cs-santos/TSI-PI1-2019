@@ -123,9 +123,6 @@ button:hover::before {
 
 
 /***************************************** Como Ajudar *****************************************/
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-
-/* Coluna 1 - Não afeta o header */
 .Como_Ajudar_Caixa_1 {
   padding: 1em;
   color:black;
@@ -171,9 +168,6 @@ button:hover::before {
 
 
 /***************************************** Brechó *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Brecho_Caixa_1 {
   padding: 0em;
   color:black;
@@ -224,9 +218,6 @@ font-size: 100%;
 
 
 /***************************************** Cursos *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Cursos_Caixa_1 {
   padding: 0em;
   color:black;
@@ -304,9 +295,6 @@ font-size: 100%;
 
 
 /***************************************** Trabalhos realizados *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Trabalhos_Caixa_1 {
   padding: 0em;
   color:black;
@@ -339,9 +327,9 @@ margin-top: 1%;
   height: 500px;
   width: 700px;
 
-  border: 15px solid transparent;
+  border: 10px solid transparent;
   padding: 1px;
-  border-image: url('border.png') 30 stretch;  
+  border-image: url('border.png') 40 stretch;  
 
 
 }
@@ -364,9 +352,6 @@ margin-top: 1%;
 
 
 /*************************************** Reuniões realizadas *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Reunioes_Caixa_1 {
   padding: 0em;
   color:black;
@@ -393,9 +378,9 @@ margin-top: 1%;
   height: 500px;
   width: 700px;
 
-  border: 15px solid transparent;
+  border: 10px solid transparent;
   padding: 1px;
-  border-image: url('border.png') 30 stretch;    
+  border-image: url('border.png') 40 stretch;    
 }
 
 #botao_reuniao_anterior{
@@ -411,9 +396,6 @@ margin-top: 1%;
 }
 
 /*************************************** Membros *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-
 .membros_Caixa_1 {
   display: grid;
   width: 100%;
@@ -449,9 +431,6 @@ margin-top: 1%;
   }
 
 /*************************************** Voluntários *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .voluntarios_Caixa_1 {
   display: grid;
   width: 100%;
@@ -470,14 +449,36 @@ margin-top: 1%;
   }
 
 /*************************************** Outros Eventos *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
-.Outros_eventos_Caixa_1 {
-  padding: 0em;
-  color:black;
-  text-align: center;
-  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
-
-
+.Outros_eventos_Caixa {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(3, 1fr);
 }
+
+#img_eventos{
+  height: 500px;
+  width: 700px;
+
+  border: 10px solid transparent;
+  padding: 1px;
+  border-image: url('border.png') 40 stretch;    
+}
+
+#Form_eventos_imagens{
+  text-align: center;
+}
+
+#label_eventos{
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.label_lista_eventos{
+  font-weight: bold;
+}
+
+#Form_eventos_lista_direita{
+  margin-left: 6%;
+}
+
+

@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/Emerson.css">
 
     <script type="text/javascript" src="JS/Slide_Show.js"></script>
+    <script type="text/javascript" src="JS/Eventos.js"></script>
     
 </head>
 
-<body>
+<body background="Imagens/Fundo_eventos.png">
+
     <div class="Grade">
 
         <header class="navbar">
@@ -70,55 +72,72 @@
 
             <a href="Como_Ajudar.html"><strong>Como Ajudar</strong></a>
             <a href="Contato.html"><strong>Contato</strong></a>
-            
-            <h1 class="">Outros Eventos</h1>
         </header>
 
     </div>
 
     <main>
-        <section class="Grade_Main_1">
-            
-            <div class="Outros_eventos_Caixa_1">
+        <section>
+            <h1 class="h1_Outros_eventos">Outros Eventos</h1>
+            <p class='p_outros_eventos'> A Associação já participou de diversos eventos, clique em 1 deles abaixo para visualizar as fotos do evento.</p>
+            <p class='p_outros_eventos2'>Para visualizar os eventos, clique na lista na esquerda, depois na lista da direita, então utilize o painel de navegação no centro para visualizar as imagens. </p>
+                        
+            <div class="Outros_eventos_Caixa">
 
-                <h1 class="h1_Outros_eventos">Outros Eventos</h1>
-
-                <p class='p_outros_eventos'> A Associação já participou de diversos eventos, clique em 1 deles abaixo para visualizar as fotos do evento. </p>
+                <form id='Form_eventos_lista_esquerda'>
+                    <label class='label_lista_eventos'>Grupos de eventos</label>
+                    <select id='Grupos_eventos' name="grupos_eventos" size="10" onchange="Eventos_carregar()" multiple>
+                        <option value="Deloitte">Deloitte</option>
+                        <option value="Petrobras">Petrobras</option>
+                        <option value="Palestra_de_literatura">Palestra de literatura</option>
+                        <option value="Senac">Senac</option>
+                        <option value="bazar_bem_possivel">Bazar do bem possível</option>
+                        <option value="Shopping_penha">Shopping penha</option>
+                        <option value="Serpro">Serpro</option>
+                        <option value="Bingo_beneficente">Bingo beneficente</option>
+                        <option value="Feijoada_Beneficente ">Feijoada Beneficente </option>
+                    </select>
+                </form>                    
                 
-                <form class ='form_reunioes' action="">
+
+                <form id='Form_eventos_imagens'>
                     <label 
-                        id='label_Trabalhos'>
+                        id='label_eventos'>
                         Título do Evento
                     </label>
 
                     <div>
-                        <img id='img_Trabalhos' src="Imagens/ajudar.png" alt="Teste">
+                        <img id='img_eventos' src="Imagens/ajudar.png" alt="Eventos que a associação já participou.">
                     </div>
                         
-                    <button id='botao_trabalhos_anterior'
+                    <button id='botao_eventos_anterior'
                         type="button" 
                         name="btn_Anterior" 
-                        onclick="anterior()"
+                        onclick="anterior('eventos')"
                     ><<
                     </button>
 
-                    <button id='botao_trabalhos_proximo'
+                    <button id='botao_eventos_proximo'
                         type="button" 
                         name="btn_Proximo" 
-                        onclick="proximo()"
+                        onclick="proximo('eventos')"
                     >>>
                     </button>
+                </form>
 
-                </form>                
-
+                <form id='Form_eventos_lista_direita'>
+                        <label class='label_lista_eventos'>Eventos</label>
+                        <select id='Eventos' name="eventos" size="10" multiple>
+                            <option value="Deloitte">Bazar de natal - Ano 2012</option>
+                        </select>
+                </form>         
             </div> 
-
          </section>
 
-         <script>
-            // Define imagem inicial
-            inicial();
-         </script>
+        <script>
+                // Carrega Grupo e evento inicial
+                
+        </script>         
     </main>
 
     <footer class="Footer">

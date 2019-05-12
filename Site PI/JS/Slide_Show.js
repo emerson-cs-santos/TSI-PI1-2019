@@ -443,7 +443,7 @@ function reuniao_caption(N_reuniao)
         break;
 
         case 4:
-            caption = "Reunião em 11 DE DEZ 2011 (4/6)";
+            caption = "Reunião em 11 de DEZ 2011 (4/6)";
         break;
 
         case 5:
