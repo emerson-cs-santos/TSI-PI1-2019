@@ -329,7 +329,7 @@ margin-top: 1%;
 
   border: 10px solid transparent;
   padding: 1px;
-  border-image: url('border.png') 40 stretch;  
+  border-image: url('..//Imagens/border.png') 40 stretch;  
 
 
 }
@@ -380,7 +380,7 @@ margin-top: 1%;
 
   border: 10px solid transparent;
   padding: 1px;
-  border-image: url('border.png') 40 stretch;    
+  border-image: url('..//Imagens/border.png') 40 stretch;    
 }
 
 #botao_reuniao_anterior{
@@ -426,7 +426,7 @@ margin-top: 1%;
   
     border: 10px solid transparent;
     padding: 2px;
-    border-image: url('border.png') 40 stretch; 
+    border-image: url('..//Imagens/border.png') 40 stretch; 
   
   }
 
@@ -448,6 +448,7 @@ margin-top: 1%;
     border: 1px solid black;
   }
 
+
 /*************************************** Outros Eventos *****************************************/
 .Outros_eventos_Caixa {
   display: grid;
@@ -462,7 +463,7 @@ margin-top: 1%;
 
   border: 10px solid transparent;
   padding: 1px;
-  border-image: url('border.png') 40 stretch;    
+  border-image: url('..//Imagens/border.png') 40 stretch;    
 }
 
 #Form_eventos_imagens{
@@ -487,7 +488,7 @@ margin-top: 1%;
   -moz-appearance: none; /* Remove estilo padrão do FireFox */
   appearance: none; /* Remove estilo padrão do FireFox*/
 
-  background: url('seta.gif') no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+  background: url('..//Imagens/seta.gif') no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
   background-position: 218px center;  /*Posição da imagem do background*/
   width: 250px; /* Tamanho do select, maior que o tamanho da div/form "div-select" */
   height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
