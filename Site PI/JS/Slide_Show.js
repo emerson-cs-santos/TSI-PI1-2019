@@ -406,10 +406,20 @@ function save(nome,valor)
 }
 
 // Carrega valor de variaval que se perdeu após a executação do javascript
-function load(nome)
+function load(nome,string)
 {
-    // Carregar informação local
-    var load = parseInt(localStorage.getItem(nome));
+    // Carregar informação local 
+    var load;
+
+    // Retornar string - Foi salvo como string e não precisa converter ao ser carregado
+    if(string == 'Sim')
+    {
+        load = localStorage.getItem(nome);
+    }
+    else // Número - Foi salvo como string e precisa ser convertido ao ser carregado
+    {
+        load = parseInt(localStorage.getItem(nome));
+    }
 
     return(load);
 }
@@ -492,7 +502,7 @@ function eventos_caminho(N_evento)
 {
     var caminho = '';
 
-    var evento = load('nome_evento');
+    var evento = load('nome_evento','Sim');
 
     switch (evento) {
         
@@ -530,7 +540,7 @@ function eventos_caption(N_evento)
 {
     var caption = '';
 
-    var evento = load('nome_evento');
+    var evento = load('nome_evento','Sim');
 
     switch (evento) {
         
@@ -554,7 +564,7 @@ function deloitte_caption(N_evento)
             caption = "Deloitte: bazar de natal 2012 (1/2)";
         break;
 
-        case 1:
+        case 2:
             caption = "Deloitte: bazar de natal 2012 (2/2)";
         break;        
             

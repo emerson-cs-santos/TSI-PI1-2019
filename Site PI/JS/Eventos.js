@@ -18,7 +18,7 @@ function Eventos_carregar()
     var evento_atual = Lsta_eventos.value;
 
     // Valida se evento selecionado é diferente do atual, se for igual, nada deve ser feito
-    var evento_tual_validar = load('nome_evento');
+    var evento_tual_validar = load('nome_evento','Sim');
    
     if(evento_tual_validar == evento_atual )
     {
@@ -52,9 +52,6 @@ function Eventos_carregar()
 function ver_evento(tipo)
 {
     var evento_qtd_fotos = load('qtd_fotos_eventos');
-
-    // TESTE DE LOAD DE STRING
-    var evento = load('nome_evento');
     
     // Decide qual grupo de imagens vão começar a ser exibidas
     switch (tipo) {
