@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 100%;
   grid-auto-rows: 70px;
-  background-color:  rgb(137, 223, 203);
   color: black;
   text-align: center;
  
@@ -45,7 +44,6 @@
 /* Classe configuracao de estilo e padding*/
 .cx2 {
   padding: 20%;
-  color:  rgb(137, 223, 203);
   text-align: left;
   text-shadow: 1px 1px 1px black;
   margin-top: 150px;
@@ -54,20 +52,17 @@
 /* Classe Background da div para saber o espaco e local que ela esta ocupando */
 
 .cx-1 {
-  background-color: rgb(137, 223, 203);
   padding: 5em;
   
   
 }
 /* Classe Background da div para saber o espaco e local que ela esta ocupando */
 .cx-2 {
-  background-color:  rgb(137, 223, 203);
   padding-top: 150px;
   padding-left: 10%;
 /* Classe Background e coluna da div para saber o espaco e local que ela esta ocupando */
 }
 .cx-3 {
-  background-color:  rgb(137, 223, 203);
   grid-column: 1/4;
  
 /* Classe Background da div para saber o espaco e local que ela esta ocupando */

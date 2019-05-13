@@ -44,7 +44,7 @@
 
 /* Menu de navegação - Ao navegar pelas opções é realçado qual opção o mouse está passando */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(112, 78, 235);
+  background-color: cornflowerblue;
 }
 
 
@@ -54,7 +54,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 4px 4px 8px 8px rgb(85, 78, 228);;
+  box-shadow: 2px 2px 4px 4px cornflowerblue;
   z-index: 1;
 }
 
@@ -81,7 +81,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-auto-rows: 80px;
-  background-color: cornflowerblue;
+  background-image: url(../Imagens/Header.jpg);
+  
 
 }
-
