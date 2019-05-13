@@ -16,7 +16,8 @@
     
 </head>
 
-<body>
+<body background="Imagens/Fundo_Trabalhos.jpg">
+
     <div>
         <div class="Grade">
         <header class="navbar">
@@ -29,7 +30,7 @@
                 <div class="dropdown-content">
                     <a href="Historia.html">História</a>
                     <a href="membros.html">Membros</a>
-                    <a href="Vontarios.html">Voluntários</a>
+                    <a href="Voluntarios.html">Voluntários</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -67,9 +68,6 @@
             <a href="Como_Ajudar.html"><strong>Como Ajudar</strong></a>
             <a href="Contato.html"><strong>Contato</strong></a>
         </div>
-        <div class="grid-container0">
-            <h1>Associação Cultural Cariri (ACC)</h1>
-        </div>
         </header>
     </div>
 
@@ -89,20 +87,20 @@
                     </label>
 
                     <div>
-                        <img id='img_Trabalhos' src="Imagens/ajudar.png" alt="Imagens de Trabalhos feitos pela Associação">
+                        <img id='img_Trabalhos' src="Imagens/Trabalhos_1.jpg" alt="Imagens de Trabalhos feitos pela Associação">
                     </div>
                         
                     <button id='botao_trabalhos_anterior'
                         type="button" 
                         name="btn_Anterior" 
-                        onclick="anterior()"
+                        onclick="mudar_imagem('trabalho','esquerda')"
                     ><<<<
                     </button>
 
                     <button id='botao_trabalhos_proximo'
                         type="button" 
                         name="btn_Proximo" 
-                        onclick="proximo()"
+                        onclick="mudar_imagem('trabalho','direita')"
                     >>>>>
                     </button>
 
@@ -114,7 +112,7 @@
 
          <script>
             // Define imagem inicial
-            inicial();
+            inicial('trabalho',1,10);
          </script>
     </main>
 

@@ -23,6 +23,7 @@
 }
 
 
+
 /* Faz desaparecer imagem */
 .Efeito_troca_imagem_desaparece{
 	animation-name: desaparece;
@@ -78,21 +79,55 @@
   opacity: 0;
 }
 
+
+/* Efeito nos botões*/
+button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(246, 41%, 21%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.45s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+button:hover::before {
+  transform: translate(-50%, -50%) scale(15);
+}
+
 /******************** Abaixo são códigos que afetam paginas individualmente criadas pelo Emerson****************/
 
 
 /***************************************** Como Ajudar *****************************************/
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-
-/* Coluna 1 - Não afeta o header */
 .Como_Ajudar_Caixa_1 {
   padding: 1em;
   color:black;
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
-
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 /* Coluna 2 - Não afeta o header */
@@ -101,8 +136,6 @@
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando*/
-  background-color: rgb(98, 0, 255);
 }
 
 .h1_como_ajudar{
@@ -135,17 +168,12 @@
 
 
 /***************************************** Brechó *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Brecho_Caixa_1 {
   padding: 0em;
   color:black;
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_brecho{
@@ -168,9 +196,6 @@ font-size: 100%;
   font-size: 150%;
 }
 
-.img_brecho_geral{
-
-  }
 
 #img_brecho_1{
   height: 30%;
@@ -193,17 +218,12 @@ font-size: 100%;
 
 
 /***************************************** Cursos *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Cursos_Caixa_1 {
   padding: 0em;
   color:black;
   text-align: left;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_cursos{
@@ -254,10 +274,6 @@ font-size: 100%;
 }
 
 
-.img_cursos_geral{
-
-  }
-
 #img_cursos_info{
   height: 30%;
   width: 30%;  
@@ -279,17 +295,11 @@ font-size: 100%;
 
 
 /***************************************** Trabalhos realizados *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Trabalhos_Caixa_1 {
   padding: 0em;
   color:black;
   text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
-
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_Trabalhos{
@@ -306,7 +316,7 @@ margin-top: 1%;
   
 
 .form_Trabalhos{
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 #label_Trabalhos{
@@ -316,37 +326,38 @@ margin-top: 1%;
 #img_Trabalhos{
   height: 500px;
   width: 700px;
+
+  border: 10px solid transparent;
+  padding: 1px;
+  border-image: url('border.png') 40 stretch;  
+
+
 }
 
 #botao_trabalhos_anterior{
-  margin-right: 40%;
-  margin-left: 40%;
   height: 2em;
   width: 5em;
+  margin-left: 40%;
 }
 
 #botao_trabalhos_proximo{
-  margin-right: 40%;
-  margin-left: 40%;  
   height: 2em;
   width: 5em;
+  margin-right: 40%;
 }
+
+
 
 
 
 
 /*************************************** Reuniões realizadas *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
 .Reunioes_Caixa_1 {
   padding: 0em;
   color:black;
   text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
 
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
 }
 
 .h1_Reunioes{
@@ -359,75 +370,128 @@ margin-top: 1%;
   margin-top: 3%;
 }
 
-#label_Trabalhos{
+#label_reuniao{
   font-size: 200%;
 }
 
-#img_Trabalhos{
+#img_reuniao{
   height: 500px;
   width: 700px;
+
+  border: 10px solid transparent;
+  padding: 1px;
+  border-image: url('border.png') 40 stretch;    
 }
 
-#botao_trabalhos_anterior{
+#botao_reuniao_anterior{
+  height: 2em;
+  width: 5em;
+  margin-left: 40%;
+}
+
+#botao_reuniao_proximo{
+  height: 2em;
+  width: 5em;
   margin-right: 40%;
-  height: 2em;
-  width: 5em;
 }
 
-#botao_trabalhos_proximo{
-  height: 2em;
-  width: 5em;
+/*************************************** Membros *****************************************/
+.membros_Caixa_1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
 }
 
+.membros_Caixa_2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
 
-
-/*************************************** Outros Eventos *****************************************/
-
-/* Cada "Caixa" Abaixo representa uma coluna, cada uma utilizada adiciona uma coluna na página- Não afeta o header */
-/* Coluna 1 - Não afeta o header */
-.Outros_eventos_Caixa_1 {
-  padding: 0em;
-  color:black;
-  text-align: center;
-  text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
-
-  /* Descomente para ver como a caixa está se comportando Não afeta o header */
-  background-color: rgb(137, 223, 203);
+  margin-top: 5%;
 }
 
-.h1_Outros_eventos{
-font-size: 200%;
-margin-top: 1%;
-
-}
-
-.p_outros_eventos{
-  margin-bottom: 0%;
-  margin-top: 0%;
-  font-size: 100%;
+.h1_membros{
+  font-size: 200%;
+  margin-top: 1%;
   
   }
 
-.form_reunioes{
-  margin-top: 3%;
+  .p_membros{
+    font-size: 120%;
+  }
+
+  #img_membro{
+    height: 250px;
+    width: 250px;
+  
+    border: 10px solid transparent;
+    padding: 2px;
+    border-image: url('border.png') 40 stretch; 
+  
+  }
+
+/*************************************** Voluntários *****************************************/
+.voluntarios_Caixa_1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+
 }
 
-#label_Trabalhos{
+.h1_voluntarios{
   font-size: 200%;
+  margin-top: 1%;
+  
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+/*************************************** Outros Eventos *****************************************/
+.Outros_eventos_Caixa {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-#img_Trabalhos{
+/* Adiciona borda a imagem exibida */
+#img_eventos{
   height: 500px;
   width: 700px;
+
+  border: 10px solid transparent;
+  padding: 1px;
+  border-image: url('border.png') 40 stretch;    
 }
 
-#botao_trabalhos_anterior{
-  margin-right: 40%;
-  height: 2em;
-  width: 5em;
+#Form_eventos_imagens{
+  text-align: center;
 }
 
-#botao_trabalhos_proximo{
-  height: 2em;
-  width: 5em;
+#label_eventos{
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.label_lista_eventos{
+  font-weight: bold;
+  font-size: 120%;
+}
+
+/* Estiliza lista slecionável de eventos */
+#Lista_eventos{
+  margin-top: 7%;
+
+  -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+  -moz-appearance: none; /* Remove estilo padrão do FireFox */
+  appearance: none; /* Remove estilo padrão do FireFox*/
+
+  background: url('seta.gif') no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+  background-position: 218px center;  /*Posição da imagem do background*/
+  width: 250px; /* Tamanho do select, maior que o tamanho da div/form "div-select" */
+  height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+
+  border:1px solid #ddd;
+  font-size: 120%;
 }

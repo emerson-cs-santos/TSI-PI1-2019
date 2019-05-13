@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>ACC - Reuniões Realizadas</title>
+    <title>ACC - Trabalhos Realizados</title>
 
     <meta charset="utf-8">
     <meta name="description" content=">Associação Cultural Cariri, Enentos beneficentes, cursos gratuiros, bazares....(colocar mais descrição que aparecetá no buscador ex: google e yahoo">
@@ -16,7 +16,8 @@
     
 </head>
 
-<body>
+<body id='body_reunioes' background="Imagens/Fundo_Reunioes.jpg">
+
     <div>
         <div class="Grade">
         <header class="navbar">
@@ -29,7 +30,7 @@
                 <div class="dropdown-content">
                     <a href="Historia.html">História</a>
                     <a href="membros.html">Membros</a>
-                    <a href="Vontarios.html">Voluntários</a>
+                    <a href="Voluntarios.html">Voluntários</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -67,9 +68,6 @@
             <a href="Como_Ajudar.html"><strong>Como Ajudar</strong></a>
             <a href="Contato.html"><strong>Contato</strong></a>
         </div>
-        <div class="grid-container0">
-            <h1>Associação Cultural Cariri (ACC)</h1>
-        </div>
         </header>
     </div>
 
@@ -78,30 +76,30 @@
             
             <div class="Reunioes_Caixa_1">
 
-                <h1 class="h1_Reunioes">Reuniões Realizadas</h1>
+                <h1 class="h1_Reunioes">Reuniões realizadas</h1>
                 
                 <form class ='form_reunioes' action="">
                     <label 
-                        id='label_Trabalhos'>
+                        id='label_reuniao'>
                         Título da reunião
                     </label>
 
                     <div>
-                        <img id='img_Trabalhos' src="Imagens/ajudar.png" alt="Imagens de reuniões">
+                        <img id='img_reuniao' src="Imagens/Reuniao_1.jpg" alt="Fotos de reuniões feitas pela Associação">
                     </div>
                         
-                    <button id='botao_trabalhos_anterior'
+                    <button id='botao_reuniao_anterior'
                         type="button" 
                         name="btn_Anterior" 
-                        onclick="anterior()"
-                    ><<
+                        onclick="mudar_imagem('reuniao','esquerda')"
+                    ><<<<
                     </button>
 
-                    <button id='botao_trabalhos_proximo'
+                    <button id='botao_reuniao_proximo'
                         type="button" 
                         name="btn_Proximo" 
-                        onclick="proximo()"
-                    >>>
+                        onclick="mudar_imagem('reuniao','direita')"
+                    >>>>>
                     </button>
 
                 </form>                
@@ -112,7 +110,7 @@
 
          <script>
             // Define imagem inicial
-            inicial();
+            inicial('reuniao',1,6);
          </script>
     </main>
 
@@ -136,6 +134,6 @@
             </div>
         </div>
     </div>
-    </footer>   
+    </footer>
 
 </body>
