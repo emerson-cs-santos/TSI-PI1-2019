@@ -524,7 +524,11 @@ function eventos_caminho(N_evento)
         
         case 'Bazar_bem_possivel':
             caminho = bazar_bem_possivel_caminho(N_evento);
-        break;      
+        break;  
+        
+        case 'Shopping_penha':
+            caminho = shopping_penha_caminho(N_evento);
+        break;         
         
         case 'Estacio':
             caminho = estacio_caminho(N_evento);
