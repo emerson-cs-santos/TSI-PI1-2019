@@ -2,7 +2,7 @@
 function ver_evento_inicial()
 {
     save('nome_evento','Deloitte');
-    save('qtd_fotos_eventos',2);
+    save('qtd_fotos_eventos',4);
 
     // Carrega imagem inicial do evento selecionado
     ver_evento('iniciar');  
@@ -32,8 +32,36 @@ function Eventos_carregar()
     switch (evento_atual) {
        
         case 'Deloitte':
-            qtd_eventos = 2;
+            qtd_eventos = 4;
         break;
+
+        case 'Petrobras':
+            qtd_eventos = 2;
+        break;   
+        
+        case 'Palestra_de_literatura':
+            qtd_eventos = 2;
+        break;    
+        
+        case 'Senac':
+            qtd_eventos = 7;
+        break; 
+        
+        case 'Bazar_bem_possivel':
+            qtd_eventos = 3;
+        break; 
+        
+        case 'Shopping_penha':
+            qtd_eventos = 3;
+        break;   
+        
+        case 'Estacio':
+            qtd_eventos = 3;
+        break;  
+        
+        case 'Clube_Pinheiros':
+            qtd_eventos = 3;
+        break;          
 
  	
       }

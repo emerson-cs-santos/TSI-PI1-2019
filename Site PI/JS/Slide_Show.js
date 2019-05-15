@@ -509,13 +509,41 @@ function eventos_caminho(N_evento)
         case 'Deloitte':
             caminho = deloitte_caminho(N_evento);
         break;
+
+        case 'Petrobras':
+            caminho = petrobras_caminho(N_evento);
+        break;   
+        
+        case 'Palestra_de_literatura':
+            caminho = palestra_de_literatura_caminho(N_evento);
+        break;        
+        
+        case 'Senac':
+            caminho = senac_caminho(N_evento);
+        break;   
+        
+        case 'Bazar_bem_possivel':
+            caminho = bazar_bem_possivel_caminho(N_evento);
+        break;  
+        
+        case 'Shopping_penha':
+            caminho = shopping_penha_caminho(N_evento);
+        break;         
+        
+        case 'Estacio':
+            caminho = estacio_caminho(N_evento);
+        break;  
+        
+        case 'Clube_Pinheiros':
+            caminho = clube_Pinheiros_caminho(N_evento);
+        break;            
             
     }
 
     return(caminho);
 }
 
-// Carrega caminho da imagem dos eventos da deloitte
+// Carrega caminho da imagem dos eventos da Deloitte
 function deloitte_caminho(N_evento)
 {
     var caminho = '';
@@ -528,12 +556,197 @@ function deloitte_caminho(N_evento)
 
         case 2:
             caminho = "Imagens/Deloitte_2.jpg";
-        break;        
+        break;     
+        
+        case 3:
+            caminho = "Imagens/Deloitte_3.jpg";
+        break;   
+        
+        case 4:
+            caminho = "Imagens/Deloitte_4.jpg";
+        break;          
             
     }
 
     return(caminho);
 }
+
+// Carrega caminho da imagem dos eventos da Petrobras
+function petrobras_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/Petrobras_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Petrobras_2.jpg";
+        break;              
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem dos eventos da Palestra de literatura
+function palestra_de_literatura_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/Palestra_Literatura_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Palestra_Literatura_2.jpg";
+        break;              
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem dos eventos do Senac
+function senac_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/Senac_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Senac_2.jpg";
+        break;    
+        
+        case 3:
+            caminho = "Imagens/Senac_3.jpg";
+        break;
+        
+        case 4:
+            caminho = "Imagens/Senac_4.jpg";
+        break; 
+        
+        case 5:
+            caminho = "Imagens/Senac_5.jpg";
+        break;    
+        
+        case 6:
+            caminho = "Imagens/Senac_6.jpg";
+        break; 
+        
+        case 7:
+            caminho = "Imagens/Senac_7.jpg";
+        break;         
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem dos eventos do Bazar do bem possivel
+function bazar_bem_possivel_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/Bazar_Bem_Possivel_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Bazar_Bem_Possivel_2.jpg";
+        break;    
+        
+        case 3:
+            caminho = "Imagens/Bazar_Bem_Possivel_3.jpg";
+        break;       
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem dos eventos do Shopping Penha
+function shopping_penha_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/Shopping_penha_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Shopping_penha_2.jpg";
+        break;    
+        
+        case 3:
+            caminho = "Imagens/Shopping_penha_3.jpg";
+        break;       
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem dos eventos da Estácio
+function estacio_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/estacio_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/estacio_2.jpg";
+        break;    
+        
+        case 3:
+            caminho = "Imagens/estacio_3.jpg";
+        break;       
+            
+    }
+
+    return(caminho);
+}
+
+// Carrega caminho da imagem dos eventos do clube Pinheiros
+function clube_Pinheiros_caminho(N_evento)
+{
+    var caminho = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caminho = "Imagens/Clube_Pinheiros_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Clube_Pinheiros_2.jpg";
+        break;    
+        
+        case 3:
+            caminho = "Imagens/Clube_Pinheiros_3.jpg";
+        break;       
+            
+    }
+
+    return(caminho);
+}
+
 
 // Carrega caminho da imagem pertinente a imagem - Eventos
 function eventos_caption(N_evento)
@@ -547,6 +760,34 @@ function eventos_caption(N_evento)
         case 'Deloitte':
             caption = deloitte_caption(N_evento);
         break;
+
+        case 'Petrobras':
+            caption = petrobras_caption(N_evento);
+        break;   
+        
+        case 'Palestra_de_literatura':
+            caption = palestra_de_literatura_caption(N_evento);
+        break; 
+        
+        case 'Senac':
+            caption = senac_caption(N_evento);
+        break;    
+        
+        case 'Bazar_bem_possivel':
+            caption = bazar_bem_possivel_caption(N_evento);
+        break;    
+        
+        case 'Shopping_penha':
+            caption = shopping_penha_caption(N_evento);
+        break;       
+        
+        case 'Estacio':
+            caption = estacio_caption(N_evento);
+        break; 
+        
+        case 'Clube_Pinheiros':
+            caption = clube_Pinheiros_caption(N_evento);
+        break;         
             
     }
 
@@ -561,15 +802,198 @@ function deloitte_caption(N_evento)
     switch (N_evento) {
         
         case 1:
-            caption = "Deloitte: bazar de natal 2012 (1/2)";
+            caption = "Deloitte: bazar de natal 2012 (1/4)";
         break;
 
         case 2:
-            caption = "Deloitte: bazar de natal 2012 (2/2)";
-        break;        
+            caption = "Deloitte: bazar de natal 2012 (2/4)";
+        break;    
+        
+        case 3:
+            caption = "Deloitte: ipacday / 2012 (3/4)";
+        break;  
+        
+        case 4:
+            caption = "Deloitte ipacday / 2012 (4/4)";
+        break;          
             
     }
 
     return(caption);
 }
 
+// Carrega caminho da imagem dos eventos da Petrobras
+function petrobras_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Petrobras: Bazar solidário 2012 (1/2)";
+        break;
+
+        case 2:
+            caption = "Petrobras: Bazar solidário 2012  (2/2)";
+        break;    
+            
+    }
+
+    return(caption);
+}
+
+// Carrega caminho da imagem dos eventos da Palestra de literatura
+function palestra_de_literatura_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Palestra de literatura (1/2)";
+        break;
+
+        case 2:
+            caption = "Palestra de literatura (2/2)";
+        break;    
+            
+    }
+
+    return(caption);
+}
+
+// Carrega caminho da imagem dos eventos do Senac
+function senac_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Senac: Oficina de feltro 2012 (1/7)";
+        break;
+
+        case 2:
+            caption = "Senac: Oficina de feltro 2012 (2/7)";
+        break; 
+        
+        case 3:
+            caption = "Senac: Oficina de feltro 2012 (3/7)";
+        break;  
+        
+        case 4:
+            caption = "Senac: Dia da responsabilidade social 2012 (4/7)";
+        break; 
+        
+        case 5:
+            caption = "Senac: Dia da responsabilidade social 2012 (5/7)";
+        break;     
+        
+        case 6:
+            caption = "Senac: Semana do meio ambiente/2012 (6/7)";
+        break;  
+        
+        case 7:
+            caption = "Senac: Semana do meio ambiente/2012 (7/7)";
+        break;          
+            
+    }
+
+    return(caption);
+}
+
+// Carrega caminho da imagem dos eventos do Bazar do bem possivel
+function bazar_bem_possivel_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Bazar do bem possível (1/3)";
+        break;
+
+        case 2:
+            caption = "Bazar do bem possível (2/3)";
+        break; 
+        
+        case 3:
+            caption = "Bazar do bem possível (3/3)";
+        break;         
+            
+    }
+
+    return(caption);
+}
+
+// Carrega caminho da imagem dos eventos do Bazar do Shopping penha
+function shopping_penha_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Shopping penha: 14/fev/2012 (1/3)";
+        break;
+
+        case 2:
+            caption = "Shopping penha: 14/fev/2012 (2/3)";
+        break; 
+        
+        case 3:
+            caption = "Shopping penha: 14/fev/2012 (3/3)";
+        break;         
+            
+    }
+
+    return(caption);
+}
+
+// Carrega caminho da imagem dos eventos do Bazar da Estacio
+function estacio_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Estácio: Exposição de Artesanato 2017 (1/3)";
+        break;
+
+        case 2:
+            caption = "Estácio: Exposição de Artesanato 2017 (2/3)";
+        break; 
+        
+        case 3:
+            caption = "Estácio: Exposição de Artesanato 2017 (3/3)";
+        break;         
+            
+    }
+
+    return(caption);
+}
+
+// Carrega caminho da imagem dos eventos do Clube Pinheiros
+function clube_Pinheiros_caption(N_evento)
+{
+    var caption = '';
+
+    switch (N_evento) {
+        
+        case 1:
+            caption = "Clube Pinheiros 2018 (1/3)";
+        break;
+
+        case 2:
+            caption = "Clube Pinheiros 2018 (2/3)";
+        break; 
+        
+        case 3:
+            caption = "Clube Pinheiros 2018 (3/3)";
+        break;         
+            
+    }
+
+    return(caption);
+}
