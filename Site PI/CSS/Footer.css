@@ -21,6 +21,7 @@
 
 footer {
 background-image: url("../Imagens/Footer.jpg");  
-background-repeat: no-repeat;
+background-repeat: repeat;
+background-position: right;
 
 }
