@@ -1,4 +1,26 @@
-/*  */
+/* margem para 2 coluna do footer */
+footer>#mapa {
+   
+  flex: 1 0 !important ;
+  text-align: right;
+  padding: 2%;
+  padding-left: 8%;
+}
+
+footer>#local {
+
+  flex: 5 0% !important;
+  padding-top: 6%;
+}
+footer {
+  background-image: url("../Imagens/Footer.jpg");  
+  background-repeat: repeat;
+  
+  
+}
+
+
+/* depois apagar daqui para baixo esta em GRID-LAYOUT nao tem mais utilidade com o footer novo */
 .Footer {
   display: grid;
   grid-template-columns: 37% 63%;

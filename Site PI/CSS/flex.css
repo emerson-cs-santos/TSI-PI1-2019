@@ -1,0 +1,53 @@
+/*Configuração de responsividade para tamanhos de tela*/
+@media all and (max-width: 1200px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+}
+@media all and (max-width: 800px) {
+    .navbar {
+        flex-flow: column wrap;
+        background: no-repeat;
+    }
+    .navbar>ul>li {
+        width: 100%;
+        
+    }
+    .menu ul.dropdown{
+        z-index: 0;
+    }
+    .container2 {
+        flex-flow: column wrap;
+
+    }
+    footer {
+        background: no-repeat;
+    }
+}
+@media all and (max-width: 1200px) {
+    footer {
+        justify-content: flex-start;
+    }
+}
+@media all and (max-width: 800px) {
+    
+    .container2 {
+        padding: 2%;
+
+    }
+    .item3 {
+        padding-left: 8%;
+    }
+    .item4 {
+        padding-left: 8%;
+    }
+    #mapa {
+        padding: 0;
+       
+    }
+    #local {
+        padding: 2%;
+        padding-left: 10%;
+    }
+
+}

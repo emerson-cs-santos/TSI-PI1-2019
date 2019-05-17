@@ -1,0 +1,94 @@
+
+
+/*Trabalhando Flex-box no Navbar*/
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url(../Imagens/Header.jpg);
+}
+
+.navbar>ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar>ul>li {
+    display: inline-block;
+    list-style: none;
+   
+}
+
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu a { 
+    margin:0px; 
+    padding-top:20px; 
+    list-style:none; 
+    text-decoration:none;
+    justify-content: flex-start;
+}
+/* Sombra da caixa do dropdown */
+ul.menu ul{ 
+    position:absolute; 
+    display:none; 
+    box-shadow:4px 4px 3px rgb(54, 82, 194);}
+ 
+/* Configurações nivel 1 lista UL MENU navbar*/
+ul.menu { 
+    float:left; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px; 
+    border-radius:5px; 
+    padding:0 15px;
+}
+
+.menu li{ 
+    float:left; 
+    width:auto; 
+    position:relative;
+}
+
+.menu li a{ 
+    display:block; 
+    padding:0px 10px; 
+    line-height:35px; 
+    height:35px; 
+    float:left; 
+    transition: all 0.1s linear; 
+}
+ 
+/* Configurações nivel 2 dropdown janela*/
+.menu li:hover>ul.dropdown{
+    display:block; 
+    top:55px; 
+    left:0; 
+    padding:5px 5px; 
+    width:190px; 
+    border-radius:0 25px 10px 10px;
+    background:rgb(255, 253, 253);   
+}
+.menu ul.dropdown a{  
+    width:170px; 
+    padding:0px 10px; 
+    border-radius:5px;  
+}
+
+/*Configurações de cores*/
+ 
+/*nivel 1*/
+
+.menu a{ 
+    color:#000;
+}
+.menu li:hover>a{ 
+    background:rgb(54, 82, 194);  
+    color:rgb(255, 255, 255);
+}
+ 
+/*nivel 2*/
+
+.dropdown a{
+    color:black;
+}
+.dropdown li:hover>a{ 
+    background:rgb(54, 82, 194); 
+}

@@ -78,7 +78,7 @@
 
 /*Cria uma grade para mudar a cor apenas do header e exibir as opções  */
 .Grade {
-  display: grid;
+  display: flex;
   grid-template-columns: 100%;
   grid-auto-rows: 80px;
   background-image: url(../Imagens/Header.jpg);
@@ -86,3 +86,27 @@
   
 
 }
+/* testando flex  */
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  background-image: url(../Imagens/Header.jpg);
+
+}
+
+@media all and (max-width: 1200px){
+  .flex {
+    justify-content: flex-start;
+  }
+}
+@media all and (max-width: 600px){
+  .flex {
+    flex-flow: column wrap;
+  }
+  .flex>{
+    width: 100%;
+  }
+}
+
