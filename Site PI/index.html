@@ -8,16 +8,22 @@
         content=">Associação Cultural Cariri, Enentos beneficentes, cursos gratuiros, bazares....(colocar mais descrição que aparecetá no buscador ex: google e yahoo">
     <meta name="keywords" content="ONG, Beneficente, brazar, cursos, palestras">
     <meta name="authot" content="The Warriors (Senac-PI)">
+    
     <link rel="stylesheet" href="css/sergio.css">
     <link rel="stylesheet" href="css/header2.css">
     <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/flex.css">
+
+    <link rel="stylesheet" href="css/Slide_show.css">
+
+
+    <script type="text/javascript" src="JS/Slide_Show.js"></script>
 </head>
 
 <body background="Imagens/Fundo_eventos.png">
     <header>
         <nav class="navbar">
-            <img src="Imagens/Logo com borda.png" width="80px" height="80px" alt="Logo da Empresa"></a>
+            <img src="Imagens/Logo_livro.jpg" width="80px" height="80px" alt="Logo da Empresa"></a>
             <ul class="menu">
                 <!-- Esse é o 1 nivel do nivel principal -->
                 <li><a href="index.html">Inicio</a></li>
@@ -51,8 +57,8 @@
                         <li><a href="Trabalhos.html">Trabalhos</a></li>
                         <li><a href="Reunioes_Realizadas.html">Reuniões realizadas</a></li>
                     </ul>
-                <li><a href="Como_Ajudar.html">como ajudar</a></li>
-                <li><a href="Contato.html">contato</a></li>
+                <li><a href="Como_Ajudar.html">Como ajudar</a></li>
+                <li><a href="Contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -94,13 +100,42 @@
                     parcerias, a organização e contribuições das pessoas, são fundamentais para o desenvolvimento de
                     nossas ações.</p>
             </div>
-        </section>
-        <aside id="imagem">
-            <img id="borda" src="Imagens/Index.jpg" height="350px;" width="480px;">
-            <aside>
 
+            <form class ='form_slide_show' action="">
+
+                    <label 
+                        id='label_index' class='label_slide_show'>
+                        Título da imagem
+                    </label>
+
+                    <div>
+                        <img id='img_Index' class='img_slide_show' src="Imagens/Index_1.jpg" alt="Imagens da Associação">
+                    </div>
+                        
+                    <button id='botao_index_anterior'
+                        type="button" 
+                        name="btn_Anterior" 
+                        onclick="mudar_imagem('index','esquerda')"
+                    ><<<<
+                    </button>
+    
+                    <button id='botao_index_proximo'
+                        type="button" 
+                        name="btn_Proximo" 
+                        onclick="mudar_imagem('index','direita')"
+                    >>>>>
+                    </button>
+    
+                </form>            
+        </section>
+
+        <script>
+            // Define imagem inicial - Nome da página de origem, imagem inicial, quantidade máxima de imagens
+            inicial('index',1,10);
+        </script>
 
     </main>
+
     <footer class="container">
         <div id="mapa">
 

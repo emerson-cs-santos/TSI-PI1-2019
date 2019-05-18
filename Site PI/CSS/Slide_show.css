@@ -1,0 +1,111 @@
+/* Faz desaparecer imagem */
+.Efeito_troca_imagem_desaparece{
+	animation-name: desaparece;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+/* Faz desaparecer imagem */
+.Efeito_troca_imagem_aparece{
+	animation-name: aparece;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+/* Faz desaparecer imagem aos poucos*/
+@keyframes desaparece {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+  }
+}
+
+/* Faz aparecer imagem aos poucos*/
+@keyframes aparece {
+	0% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+  }
+}
+
+/*Apagar imagem usando opacidade*/
+.opacidade {
+  opacity: 0;
+}
+
+
+/* Efeito nos botões*/
+button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(246, 41%, 21%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.45s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+button:hover::before {
+  transform: translate(-50%, -50%) scale(15);
+}
+
+
+
+/* Apresentação da Label e da imagem do slide show, no momento afeta apenas a página index, as outras que tm slide show, usaam css próprio do arquivo emerson.css, mas talvez possam passar a usar daqui, só tem que ver se não vai atrapalhar o layout*/
+
+.label_slide_show{
+font-size: 200%;
+}
+  
+.img_slide_show{
+    height: 500px;
+    width: 700px;
+  
+    border: 10px solid transparent;
+    padding: 1px;
+    border-image: url('..//Imagens/border.png') 40 stretch;
+  }

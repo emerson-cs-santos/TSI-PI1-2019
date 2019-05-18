@@ -2,6 +2,7 @@
 // Páginas que utilizam:
     // Trabalhos
     // Reuniões
+    // Outros eventos
     // Index
 
 // Define foto inicial
@@ -126,7 +127,12 @@ function carregar_tipo_save_load_Atual(origem)
         // Página de eventos que chamou função
         case 'eventos':
             Nome_numero_imagem_atual = 'eventos_imagem_atual';         
-        break;        
+        break; 
+        
+        // Página de eventos que chamou função
+        case 'index':
+            Nome_numero_imagem_atual = 'index_imagem_atual';         
+        break;             
 
       }
 
@@ -156,6 +162,11 @@ function carregar_tipo_save_load_Qtd_Maximo(origem)
             Nome_qtd_maxima_fotos    = 'eventos_quantidade_maxima_de_fotos';            
         break;        
 
+        // Página de eventos que chamou função
+        case 'index':
+            Nome_qtd_maxima_fotos    = 'index_quantidade_maxima_de_fotos';            
+        break;          
+
       }
 
     return(Nome_qtd_maxima_fotos);
@@ -181,7 +192,12 @@ function id_imagem_nome(origem)
         // Página de eventos que chamou função
         case 'eventos':
             id_imagem = 'img_eventos';   
-        break;        
+        break;   
+        
+        // Página index que chamou função
+        case 'index':
+            id_imagem = 'img_Index';   
+        break;          
 
       }
 
@@ -208,7 +224,12 @@ function id_label_nome(origem)
         // Página de eventos que chamou função
         case 'eventos':
             id_label = 'label_eventos';   
-        break;        
+        break;     
+        
+        // Página de eventos que chamou função
+        case 'index':
+            id_label = 'label_index';   
+        break;         
 
       }
 
@@ -266,6 +287,9 @@ function imagem_caminho(origem,numero_imagem)
 
         case 'eventos':
             caminho = eventos_caminho(numero_imagem);
+
+        case 'index':
+            caminho = index_caminho(numero_imagem);            
          
       }
 
@@ -289,7 +313,11 @@ function label_caption(origem,numero_imagem)
 
         case 'eventos':
             label_caption = eventos_caption(numero_imagem); 
-        break;        
+        break;    
+        
+        case 'index':
+            label_caption = index_caption(numero_imagem); 
+        break;         
          
       }
 
@@ -460,7 +488,7 @@ function reuniao_caminho(N_reuniao)
     return(caminho);
 }
 
-// Carrega caption da label referente a imagem - REUNIÃO
+// Carrega caption da label referente ao caption- REUNIÃO
 function reuniao_caption(N_reuniao)
 {
     var caption = '';
@@ -496,6 +524,109 @@ function reuniao_caption(N_reuniao)
     return(caption);
 }
 
+// Carrega caminho da imagem pertinente a imagem - INDEX
+function index_caminho(N_index)
+{
+   var caminho = '';
+
+    switch (N_index) {
+       
+        case 1:
+            caminho = "Imagens/Index_1.jpg";
+        break;
+
+        case 2:
+            caminho = "Imagens/Index_2.jpg";
+        break;
+
+        case 3:
+            caminho = "Imagens/Index_3.jpg";
+        break;
+
+        case 4:
+            caminho = "Imagens/Index_4.jpg";
+        break;
+
+        case 5:
+            caminho = "Imagens/Index_5.jpg";
+        break;  
+
+		case 6:
+            caminho = "Imagens/Index_6.jpg";
+        break; 
+
+		case 7:
+            caminho = "Imagens/Index_7.jpg";
+        break; 
+        
+        case 8:
+            caminho = "Imagens/Index_8.jpg";
+        break; 
+
+		case 9:
+            caminho = "Imagens/Index_9.jpg";
+        break; 
+        
+		case 10:
+            caminho = "Imagens/Index_10.jpg";
+        break;         
+				
+      }
+
+    return(caminho);
+}
+
+// Carrega caption da label referente ao caption - INDEX
+function index_caption(N_index)
+{
+    var caption = '';
+
+    switch (N_index) {
+       
+        case 1:
+            caption = "Trabalhos para comunidade (1/10)";
+        break;
+
+        case 2:
+            caption = "Reciclagem (2/10)";
+        break;
+
+        case 3:
+            caption = "Brechó (3/10)";
+        break;
+
+        case 4:
+            caption = "Eventos (4/10)";
+        break;
+
+        case 5:
+            caption = "Literatura  (5/10)";
+        break;   
+
+        case 6:
+            caption = "História do bairro (6/10)";
+        break;
+
+        case 7:
+            caption = "Trabalho em grupo (7/10)";
+        break;
+        
+        case 8:
+            caption = "Bazar bem possível (8/10)";
+        break;
+        
+        case 9:
+            caption = "Artesanato (9/10)";
+        break;
+        
+        case 10:
+            caption = "Clube pinheiros (10/10)";
+        break;        
+				
+      }    
+
+    return(caption);
+}
 
 // Carrega caminho da imagem pertinente a imagem - Eventos
 function eventos_caminho(N_evento)

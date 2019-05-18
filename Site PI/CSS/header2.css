@@ -39,6 +39,7 @@ ul.menu {
     font-size:15px; 
     border-radius:5px; 
     padding:0 15px;
+    font-weight: bold;
 }
 
 .menu li{ 
