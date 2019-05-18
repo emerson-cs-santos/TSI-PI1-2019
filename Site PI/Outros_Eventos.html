@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="css/Header.css">
     <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Slide_show.css">
     <link rel="stylesheet" href="css/Emerson.css">
 
     <script type="text/javascript" src="JS/Slide_Show.js"></script>
@@ -86,7 +87,7 @@
 
                 <form id='Form_eventos_lista'>
                     
-                    <label class='label_lista_eventos'>Eventos:</label>
+                    <label class='label_lista_eventos' >Eventos:</label>
 
                     <select id="Lista_eventos" onchange="Eventos_carregar()">
                        
@@ -104,12 +105,12 @@
                 
                 <form id='Form_eventos_imagens'>
                     <label 
-                        id='label_eventos'>
+                        id='label_eventos' class='label_slide_show'>
                         Título do Evento
                     </label>
 
                     <div>
-                        <img id='img_eventos' src="Imagens/ajudar.png" alt="Eventos que a associação já participou.">
+                        <img id='img_eventos' class='img_slide_show' src="Imagens/ajudar.png" alt="Eventos que a associação já participou.">
                     </div>
                         
                     <button id='botao_eventos_anterior'

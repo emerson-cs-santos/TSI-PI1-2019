@@ -95,7 +95,7 @@ button:hover::before {
 
 
 
-/* Apresentação da Label e da imagem do slide show, no momento afeta apenas a página index, as outras que tm slide show, usaam css próprio do arquivo emerson.css, mas talvez possam passar a usar daqui, só tem que ver se não vai atrapalhar o layout*/
+/* Apresentação da Label e da imagem do slide show*/
 
 .label_slide_show{
 font-size: 200%;
