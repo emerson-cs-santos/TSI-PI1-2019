@@ -1,0 +1,15 @@
+
+/* caixas do contato */
+
+.contact{display: flex; justify-content: left}
+.contato{ width: 100%; max-width: 500px;}
+.form{display: flex; flex-direction: column}
+.field{padding: 10px; margin-bottom: 15px; border: 1px solid #DDD; border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 16px }
+.textarea{height: 150px;}
+
+
+
+
+  
+
+
