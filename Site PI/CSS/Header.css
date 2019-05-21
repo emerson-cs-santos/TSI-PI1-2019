@@ -78,7 +78,7 @@
 
 /*Cria uma grade para mudar a cor apenas do header e exibir as opções  */
 .Grade {
-  display: flex;
+  display: grid;
   grid-template-columns: 100%;
   grid-auto-rows: 80px;
   background-image: url(../Imagens/Header.jpg);
@@ -86,27 +86,43 @@
   
 
 }
-/* testando flex  */
 
-.flex {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  background-image: url(../Imagens/Header.jpg);
 
+/* Efeito nos botões*/
+button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(246, 41%, 21%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
 }
 
-@media all and (max-width: 1200px){
-  .flex {
-    justify-content: flex-start;
-  }
-}
-@media all and (max-width: 600px){
-  .flex {
-    flex-flow: column wrap;
-  }
-  .flex>{
-    width: 100%;
-  }
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.45s ease-in-out;
 }
 
+button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+button:hover::before {
+  transform: translate(-50%, -50%) scale(15);
+}
