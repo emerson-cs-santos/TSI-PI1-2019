@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
 }
 /*Trabalhando Flex-box no Navbar*/
 .navbar {
@@ -34,10 +35,11 @@ ul.menu ul{
 /* Configurações nivel 1 lista UL MENU navbar*/
 ul.menu { 
   float:left; 
-  font-family:Arial, Helvetica, sans-serif;
+  
   font-size:15px; 
   border-radius:5px; 
   padding:0 15px;
+  font-weight: bold;
 }
 
 .menu li{ 

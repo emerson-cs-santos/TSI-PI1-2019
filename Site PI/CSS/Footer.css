@@ -31,10 +31,7 @@ footer {
   grid-template-columns: 37% 63%;
   padding-top: 1em; 
   padding-left: 80px;
-  
-
-  
-
+  font-weight: bold;
 }
 /* margem para 2 coluna do footer */
 #margem_footer {
