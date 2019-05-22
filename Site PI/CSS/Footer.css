@@ -5,6 +5,7 @@ footer>#mapa {
   text-align: right;
   padding: 2%;
   padding-left: 8%;
+  margin-bottom:  3%;
 }
 
 footer>#local {
@@ -15,8 +16,12 @@ footer>#local {
 footer {
   background-image: url("../Imagens/Footer.jpg");  
   background-repeat: repeat;
-  
-  
+
+}
+
+.mapa_footer {
+  padding-top: 5%;
+  margin-bottom:  3%;
 }
 
 
