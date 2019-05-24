@@ -5,6 +5,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
+  
 }
 
 /* 2 Colunas para exibir o Main */
@@ -69,32 +70,43 @@ margin-top: 1%;
 
 }
 
+#botao_reuniao_anterior{
+  margin-right: 250px;
+}
+
+#botao_reuniao_proximo{
+  margin-left: 250px;
+  margin-bottom: 1%;
+}
+
+
 /*************************************** Membros *****************************************/
 .membros_Caixa_1 {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
+  margin-left: 6%;
 }
 
 .membros_Caixa_2 {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-
   margin-top: 5%;
+  margin-left: 6%;
+  margin-bottom: 2%;
 }
 
 .h1_membros{
   font-size: 200%;
-  margin-top: 1%;
-  
+  margin-left: 6%;
   }
 
   .p_membros{
     font-size: 120%;
   }
 
-  #img_membro{
+ .img_membro{
     height: 250px;
     width: 250px;
   
@@ -142,6 +154,16 @@ margin-top: 1%;
   font-weight: bold;
   font-size: 120%;
 }
+
+#botao_eventos_anterior{
+  margin-right: 250px;
+}
+
+#botao_eventos_proximo{
+  margin-left: 250px;
+  margin-bottom: 1%;
+}
+
 
 /* Estiliza lista slecionável de eventos */
 #Lista_eventos{
