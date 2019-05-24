@@ -287,9 +287,11 @@ function imagem_caminho(origem,numero_imagem)
 
         case 'eventos':
             caminho = eventos_caminho(numero_imagem);
+        break;
 
         case 'index':
-            caminho = index_caminho(numero_imagem);            
+            caminho = index_caminho(numero_imagem);    
+        break;
          
       }
 
