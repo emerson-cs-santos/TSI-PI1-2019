@@ -60,6 +60,7 @@
   padding: 5em;
   
   
+  
 }
 /* Classe Background da div para saber o espaco e local que ela esta ocupando */
 .cx-2 {
@@ -69,20 +70,31 @@
 }
 .cx-3 {
   grid-column: 1/4;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 
 
 /* Borda das fotos */
-#borda {
+.borda {
   border-top: 5px;
   border-left: 5px;
   border-right: 5px;
   border-bottom: 5px;
   border-color:rgb(132, 160, 143);
   border-style: outset;
+  height:260px;
+  width:360px;
 
-  /* tirando o padding do body */
+}
+.borda2 {
+  border-top: 5px;
+  border-left: 5px;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-color:rgb(132, 160, 143);
+  border-style: outset;
+  height: 51%;
+  
 
 }
 

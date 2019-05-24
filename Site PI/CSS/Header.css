@@ -7,6 +7,7 @@ body{
 /*Trabalhando Flex-box no Navbar*/
 .navbar {
   background-image: url(../Imagens/Header.jpg);
+  padding-left: 5%;
 }
 
 .navbar>ul {
@@ -107,8 +108,7 @@ ul.menu {
 #imagem_header {
   float: left;
   margin-left: 1%;
-  width:80px; 
-  height:80px; 
+  height: 100%;
 
 }
 
