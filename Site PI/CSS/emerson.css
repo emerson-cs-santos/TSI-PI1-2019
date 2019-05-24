@@ -44,6 +44,15 @@ margin-top: 1%;
   font-size: 150%;
   }
 
+  #botao_trabalhos_anterior{
+    margin-right: 250px;
+  }
+
+  #botao_trabalhos_proximo{
+    margin-left: 250px;
+    margin-bottom: 1%;
+  }
+
 
 /*************************************** Reuniões realizadas *****************************************/
 .Reunioes_Caixa_1 {
