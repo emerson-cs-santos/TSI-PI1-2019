@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/sergio.css">
 
+    <link rel="stylesheet" href="css/Slide_show.css">
+
+    <script src="JS/Slide_Show.js"></script>
+
 </head>
 
 <body>
@@ -122,11 +126,35 @@
                     nossas ações.</p>
             </div>
 
-            <div class="cx-2">
-                <img class="borda2" src="Imagens/Index.jpg" alt="Imagem Associação Cultural Cariri">
-            </div>
+            <form class ='cx-2'>
+                <label 
+                    id='label_index' class='label_slide_show'>
+                    Título da imagem
+                </label>
 
+                <img id='img_Index' class='img_slide_show_index' src="Imagens/index_1.jpg" alt="Fotos da Associação">
+                
+                <button id='botao_anterior_index'
+                    type="button" 
+                    name="btn_Anterior" 
+                    onclick="mudar_imagem('index','esquerda')"
+                ><<
+                </button>
+
+                <button id='botao_proximo_index'
+                    type="button" 
+                    name="btn_Proximo" 
+                    onclick="mudar_imagem('index','direita')"
+                >>>
+                </button>
+            </form>
         </section>
+
+        <script>
+            // Define imagem inicial
+            inicial('index',1,10);
+        </script>   
+
     </main>
 
     <footer>

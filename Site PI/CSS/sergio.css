@@ -104,3 +104,13 @@ h1 {
   font-size: 35px;
   text-align: left;
 } 
+
+
+/* Posição dos botões do slide show do index */
+#botao_anterior_index{
+  margin-left: 0px;
+}
+
+#botao_proximo_index{
+  margin-left: 407px;
+}

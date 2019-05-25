@@ -67,4 +67,14 @@ font-size: 200%;
     border: 10px solid transparent;
     padding: 1px;
     border-image: url('..//Imagens/border.png') 40 stretch;
+	}
+	
+
+	.img_slide_show_index{
+		height: 51%;
+		width: 90%;
+  
+    border: 10px solid transparent;
+    padding: 1px;
+    border-image: url('..//Imagens/border.png') 40 stretch;
   }
