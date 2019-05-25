@@ -33,8 +33,8 @@
 .Trabalhos_Caixa_1 {
   padding: 0em;
   color:black;
-  text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+  margin-left: 6%;
 }
 
 .h1_Trabalhos{
@@ -42,27 +42,31 @@ font-size: 200%;
 }
 
 .p_Trabalhos{
-  margin-bottom: 0%;
+  margin-bottom: 2%;
   margin-top: 0%;
   font-size: 150%;
   }
 
   #botao_trabalhos_anterior{
-    margin-right: 250px;
+    margin-right: 300px;
   }
 
   #botao_trabalhos_proximo{
-    margin-left: 250px;
-    margin-bottom: 1%;
+    margin-left: 316px;
+    margin-bottom: 2%;
   }
+
+#img_Trabalhos{
+  margin-top: 1%;
+}
 
 
 /*************************************** Reuniões realizadas *****************************************/
 .Reunioes_Caixa_1 {
   padding: 0em;
   color:black;
-  text-align: center;
   text-shadow: 0,5px 1px 0,5px rgb(252, 252, 252);
+  margin-left: 6%;
 
 }
 
@@ -71,12 +75,12 @@ font-size: 200%;
 }
 
 #botao_reuniao_anterior{
-  margin-right: 250px;
+  margin-right: 300px;
 }
 
 #botao_reuniao_proximo{
-  margin-left: 250px;
-  margin-bottom: 1%;
+  margin-left: 316px;
+  margin-bottom: 2%;
 }
 
 
@@ -145,6 +149,7 @@ font-size: 200%;
   display: grid;
   width: 80%;
   grid-template-columns: repeat(2, 1fr);
+  margin-left: 6%;
 }
 
 #Form_eventos_imagens{
@@ -167,6 +172,18 @@ font-size: 200%;
 #botao_eventos_proximo{
   margin-left: 250px;
   margin-bottom: 1%;
+}
+
+.h1_Outros_eventos{
+  margin-left: 6%;
+}
+
+.p_outros_eventos{
+  margin-left: 6%;
+}
+
+.p_outros_eventos2{
+  margin-left: 6%;
 }
 
 

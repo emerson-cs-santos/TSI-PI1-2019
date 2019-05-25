@@ -14,11 +14,10 @@
 
     <link rel="stylesheet" href="css/Slide_show.css">
 
-    <script type="text/javascript" src="JS/Slide_Show.js"></script>
-    
+    <script src="JS/Slide_Show.js"></script>
 </head>
 
-<body background="Imagens/Fundo_Trabalhos.jpg">
+<body>
 
     <header class="Grade">
 
@@ -26,7 +25,7 @@
             <nav class="navbar">
     
                 <!-- Logo da ONG -->
-                <a href="index.html"> <img id="imagem_header" src="Imagens/Logo_livro.jpg" width="80px" height="80px" alt="Logo da ONG"></a>
+                <a href="index.html"> <img id="imagem_header" src="Imagens/Logo_livro.jpg" alt="Logo da ONG"></a>
     
                 <!-- Opções do menu-->
                 <ul class="menu">
@@ -96,7 +95,7 @@
 
                 <p class="p_Trabalhos">Alguns resultados dos projetos e eventos</p>
                 
-                <form class ='form_Trabalhos' action="">
+                <form class ='form_Trabalhos'>
                     <label 
                         id='label_Trabalhos' class='label_slide_show'>
                         Título do trabalho
@@ -110,14 +109,14 @@
                         type="button" 
                         name="btn_Anterior" 
                         onclick="mudar_imagem('trabalho','esquerda')"
-                    ><<<<
+                    ><<
                     </button>
 
                     <button id='botao_trabalhos_proximo'
                         type="button" 
                         name="btn_Proximo" 
                         onclick="mudar_imagem('trabalho','direita')"
-                    >>>>>
+                    >>>
                     </button>
 
                 </form>                
