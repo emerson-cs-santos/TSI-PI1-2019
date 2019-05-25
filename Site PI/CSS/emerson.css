@@ -23,6 +23,10 @@
   grid-template-rows: 100%;
 }
 
+.margem_top{
+  margin-top: 10%;
+}
+
 /******************** Abaixo são códigos que afetam paginas individualmente criadas pelo Emerson****************/
 
 /***************************************** Trabalhos realizados *****************************************/
@@ -35,8 +39,6 @@
 
 .h1_Trabalhos{
 font-size: 200%;
-margin-top: 1%;
-
 }
 
 .p_Trabalhos{
@@ -66,8 +68,6 @@ margin-top: 1%;
 
 .h1_Reunioes{
 font-size: 200%;
-margin-top: 1%;
-
 }
 
 #botao_reuniao_anterior{
@@ -126,7 +126,6 @@ margin-top: 1%;
 
 .h1_voluntarios{
   font-size: 200%;
-  margin-top: 1%;
   margin-left: 6%;
   }
 
