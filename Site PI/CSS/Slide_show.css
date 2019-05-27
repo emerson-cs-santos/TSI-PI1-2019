@@ -57,7 +57,8 @@
 /* Apresentação da Label e da imagem do slide show*/
 
 .label_slide_show{
-font-size: 200%;
+font-size: 150%;
+font-weight: bold;
 }
   
 .img_slide_show{
