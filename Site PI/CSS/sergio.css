@@ -107,9 +107,9 @@ h1 {
 
 /* Posição dos botões do slide show do index */
 #botao_anterior_index{
-
+margin-right: 5%;
 }
 
 #botao_proximo_index{
-
+margin-left: 75%;
 }
